@@ -17,6 +17,11 @@ body {
   clear: both;
   float: none;
   width: 100%;
+
+  // Secondary Mobile - Phone & Below
+   @media screen and (max-width: $phone) {
+      padding: 3em 0;
+   } // End Phone & Below
 }
 
 section {
