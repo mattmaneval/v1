@@ -1,16 +1,17 @@
 .content {
-
-  // Lists
-  ul, ol {
+  ul {
+    column-count: 3;
 
     li {
-
+      @include h5;
+      margin-bottom: 0.65rem;
+      font-size: 0.9rem;
     }
-  } // End ul, ol
+  } // End ul
 
-  // Paragraph
   p {
-
+    margin-bottom: $half-space;
+    font-size: 1.1em;
   } // End p
 
   img {
