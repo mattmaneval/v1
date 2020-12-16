@@ -15,7 +15,10 @@ h1 {
 }
 
 @mixin h2 {
-
+  color: $foreground;
+  font-family: $font;
+  font-size: 2.4em;
+  margin-bottom: $space;
 }
 
 h2 {
