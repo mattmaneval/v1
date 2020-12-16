@@ -43,9 +43,6 @@ $box-shadow: 1em 1em 4em -2em $background;
 @import "assets/stylesheets/base/generics";
 @import "assets/stylesheets/base/fonts";
 
-// Shared
-@import "assets/stylesheets/navigation/arrow-cta"
-
 // // Layout
 @import "assets/stylesheets/layout/global";
 @import "assets/stylesheets/layout/headings";
@@ -53,6 +50,9 @@ $box-shadow: 1em 1em 4em -2em $background;
 @import "assets/stylesheets/layout/content";
 @import "assets/stylesheets/layout/header";
 @import "assets/stylesheets/layout/footer";
+
+// Shared
+@import "assets/stylesheets/navigation/arrow-cta";
 
 // // Modules
 @import "assets/stylesheets/hero";

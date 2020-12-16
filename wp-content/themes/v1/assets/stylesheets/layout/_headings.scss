@@ -1,12 +1,12 @@
 @mixin h1 {
   font-family: $font;
-  font-size: 4em;
+  font-size: 6em;
   color: $foreground;
   margin-bottom: 1rem;
 
   // Secondary Mobile - Phone & Below
   @media screen and (max-width: $phone) {
-    font-size: 3em;
+    font-size: 4em;
   } // End Phone & Below
 }
 
@@ -39,7 +39,9 @@ h4 {
 }
 
 @mixin h5 {
-
+  font-family: $font-medium;
+  font-size: 1.1rem;
+  letter-spacing: .05em;
 }
 
 h5 {
