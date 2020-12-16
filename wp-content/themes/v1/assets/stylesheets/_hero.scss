@@ -1,3 +1,20 @@
 .hero {
-  
+
+  h1{
+    span {
+      &:first-of-type {
+        display: inline-block;
+        color: $callout;
+        font-size: 1.3rem;
+        font-family: $font-bold;
+        letter-spacing: 0.03em;
+        margin-bottom: $space;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.4em;
+    max-width: 28em;
+  }  
 }

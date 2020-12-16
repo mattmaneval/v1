@@ -19,14 +19,22 @@ section {
 }
 
 @mixin p {
-
+  font-family: $font-light;
+  color: $foreground;
+  line-height: 160%;
+  margin-bottom: $space;
 }
 
 p {
   @include p;
 
   a {
+    @include animate;
+    color: $foreground;
 
+    &:hover {
+      color: $callout;
+    }
   }
 }
 

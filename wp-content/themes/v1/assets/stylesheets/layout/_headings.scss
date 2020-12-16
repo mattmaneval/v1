@@ -1,7 +1,13 @@
 @mixin h1 {
-  font-style: $font;
+  font-family: $font;
   font-size: 4em;
   color: $foreground;
+  margin-bottom: 1rem;
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    font-size: 3em;
+  } // End Phone & Below
 }
 
 h1 {
