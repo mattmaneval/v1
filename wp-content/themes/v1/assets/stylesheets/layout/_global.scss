@@ -11,7 +11,12 @@ body {
 }
 
 @mixin section {
-
+  padding: 6em 0;
+  display: inline-block;
+  position: relative;
+  clear: both;
+  float: none;
+  width: 100%;
 }
 
 section {
@@ -19,14 +24,22 @@ section {
 }
 
 @mixin p {
-
+  font-family: $font-light;
+  color: $foreground;
+  line-height: 140%;
+  margin-bottom: $space;
 }
 
 p {
   @include p;
 
   a {
+    @include animate;
+    color: $foreground;
 
+    &:hover {
+      color: $callout;
+    }
   }
 }
 
