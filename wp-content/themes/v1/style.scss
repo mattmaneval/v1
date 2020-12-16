@@ -1,0 +1,67 @@
+/*! WORDPRESS THEME INFO
+Theme Name: v1
+Author: Matt Maneval
+Author URI: https://mattmaneval.com
+Version: 1.0
+*/
+
+// // Variables
+
+// Responsive
+$wrap: calc(100% -10rem);
+$wrap-mobile: 85%;
+$tablet: 1024px;
+$big-phone: 840px;
+$phone: 767px;
+$small-phone:480px;
+
+// Colors
+$background: #fcfcfa;
+$background-alt: #f5e6d0;
+$foreground: #0a192f;
+$callout: #a81432;
+$text-select: #ffa500;
+
+// Space
+
+// Fonts
+$font: "fanwoodregular";
+$font-light: "LeagueSpartan-Light";
+$font-extra-light: "LeagueSpartan-ExtraLight";
+$font-medium: "LeagueSpartan-Medium";
+$font-semibold: "LeagueSpartan-SemiBold";
+$font-bold: "LeagueSpartan-Bold";
+$font-italic: "fanwooditalic";
+
+// Misc
+$box-shadow: 1em 1em 4em -2em $background;
+
+// // Base Imports
+@import "assets/stylesheets/base/utilities";
+@import "assets/stylesheets/base/resets";
+@import "assets/stylesheets/base/generics";
+@import "assets/stylesheets/base/fonts";
+
+// // Layout
+@import "assets/stylesheets/layout/global";
+@import "assets/stylesheets/layout/headings";
+@import "assets/stylesheets/layout/forms";
+@import "assets/stylesheets/layout/content";
+@import "assets/stylesheets/layout/header";
+@import "assets/stylesheets/layout/footer";
+
+// // Modules
+
+// // Media Queries
+
+// Primary Mobile - Tablet & Below
+// @media screen and (max-width: $tablet) {} // End Tablet & Below
+
+// Big Phone
+// @media screen and (max-width: $big-phone) {} // End Big Phone
+
+// Secondary Mobile - Phone & Below
+// @media screen and (max-width: $phone) {} // End Phone & Below
+
+// Small Phone
+// @media only screen and (max-width: $small-phone) {} // End Small Phone

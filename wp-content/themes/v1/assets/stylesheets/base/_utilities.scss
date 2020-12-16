@@ -1,0 +1,14 @@
+// Browser Prefix
+@mixin browser-prefix($property, $value) {
+  -webkit-#{$property}: $value;
+  -khtml-#{$property}: $value;
+  -moz-#{$property}: $value;
+  -ms-#{$property}: $value;
+  -o-#{$property}: $value;
+  #{$property}: $value;
+}
+
+// Animate
+@mixin animate($element: all, $time: 0.2s, $effect: ease-in-out) {
+  @include browser-prefix(transition, $element $time $effect);
+}

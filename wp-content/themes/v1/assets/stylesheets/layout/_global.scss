@@ -1,0 +1,45 @@
+html, body {
+
+}
+
+html {
+
+}
+
+body {
+
+}
+
+@mixin section {
+
+}
+
+section {
+  @include section;
+}
+
+@mixin p {
+
+}
+
+p {
+  @include p;
+
+  a {
+
+  }
+}
+
+strong {
+
+  em {
+
+  }
+}
+
+em {
+
+  strong {
+
+  }
+}

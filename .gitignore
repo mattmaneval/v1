@@ -1,0 +1,15 @@
+# ignore everything in the "wp-content" directory, except:
+wp-content/*
+!wp-content/mu-plugins/
+!wp-content/plugins/
+!wp-content/themes/
+
+wp-config.php
+
+# Misc
+node_modules/
+*.log
+*.sql
+*.sqlite
+*.keep
+*.DS_Store
