@@ -50,6 +50,12 @@ h3 {
   position: relative;
   display: inline-block;
   color: $callout;
+  margin-bottom: 6em;
+
+  // Secondary Mobile - Phone & Below
+   @media screen and (max-width: $phone) {
+      margin-bottom: 3em;
+   } // End Phone & Below
 }
 
 h4 {

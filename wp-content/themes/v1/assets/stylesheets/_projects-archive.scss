@@ -1,0 +1,63 @@
+.projects-archive {
+
+  td.year {
+    @include h4;
+  }
+
+  td.title {
+    @include h2;
+    font-size: 1.7em;
+  }
+
+  td.agency {
+    @include h5;
+
+    a {
+      @include animate;
+      color: $foreground;
+
+      &:hover {
+        color: $callout;
+      }
+    }
+  }
+
+  td.tech {
+    @include p;
+  }
+
+  td.links {
+    display: flex;
+    justify-content: flex-end;
+
+      a {
+        padding-left: 0.35em;
+
+        &:hover {
+          svg {
+            transform: translateY(-0.188em);
+            &, use {
+              fill: $callout;
+            }
+          }
+        }
+      }
+
+      svg {
+        @include animate;
+        height: 1.25em;
+        width: 1.25em;
+
+        &, use {
+          fill: $foreground;
+        }
+      }
+    } // End &-links
+}
+
+.hide-on-mobile {
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    display: none;
+  } // End Phone & Below
+}
