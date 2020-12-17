@@ -1,0 +1,110 @@
+.projects-archive {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-family: $font;
+
+  &-row {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0.35em;
+  } // End &-row
+
+  &-cell {
+    // padding: 0 1.5em 0 0;
+    padding: 0.25em;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  } // End &-cell
+
+  &-head {
+    font-family: $font-bold;
+    font-size: 1em;
+  } // End &-cell-head
+
+  &-year {
+    @include h4;
+    width: 10%;
+
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+      width: 20%;
+    } // End Phone & Below
+  } // End &-year
+
+  &-tech,
+  &-title {
+    width: 30%;
+  }
+
+  &-title {
+    @include h5;
+    font-size: 1.5em;
+
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+      width: 70%;
+    } // End Phone & Below
+  } // End &-title
+
+  &-agency {
+    width: 20%;
+
+    a {
+      @include animate;
+      color: $foreground;
+
+      &:hover {
+        color: $callout;
+      }
+    }
+  } // End &-agency
+
+  &-links {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+      width: 10%;
+    } // End Phone & Below
+
+    a {
+      padding-left: 0.35em;
+
+      &:hover {
+        svg {
+          transform: translateY(-0.188em);
+          &, use {
+            fill: $callout;
+          }
+        }
+      }
+    }
+
+    svg {
+      @include animate;
+      height: 1.25em;
+      width: 1.25em;
+
+      &, use {
+        fill: $foreground;
+      }
+    }
+  } // End &-links
+}
+
+.hide-on-mobile {
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    display: none;
+  } // End Phone & Below
+}

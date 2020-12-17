@@ -13,10 +13,12 @@
       'search_items' => __( 'Search Projects', 'projects' ),
       'not_found' => __( 'No projects found', 'projects' ),
       'not_found_in_trash' => __( 'No projects found in Trash', 'projects' ),
+      'parent_item_colon' => __( 'Parent Team:', 'team' ),
       'menu_name' => __( 'Projects', 'projects' ),
     );
 
     $args = array(
+      'description' => "Our team has over a century of combined experience exploring and innovating at the intersection of arts education and business technologies.",
       'labels' => $labels,
       'hierarchical' => false,
       'supports' => array( 'title', 'thumbnail', 'editor' ),
