@@ -10,26 +10,30 @@
     <section class="projects-archive">
       <div class="wrap">
         <h3>Projects Archive</h3>
-        <div class="projects-archive-row">
-          <div class="projects-archive-cell-head projects-archive-year">Year</div>
-          <div class="projects-archive-cell-head projects-archive-title">Project</div>
-          <div class="projects-archive-cell-head projects-archive-agency hide-on-mobile">Agency</div>
-          <div class="projects-archive-cell-head projects-archive-tech hide-on-mobile">Built With</div>
-          <div class="projects-archive-cell-head projects-archive-links">Links</div>
-        </div>
-        <?php
-          while($projectsLoop->have_posts() ) : $projectsLoop->the_post();
+        <table>
+          <thead>
+            <tr>
+              <th>Year</th>
+              <th>Project</th>
+              <th class="hide-on-mobile">Agency</th>
+              <th class="hide-on-mobile">Tech</th>
+              <th>Links</th>
+            </tr>
+          </thead>
+          <?php
+            while($projectsLoop->have_posts() ) : $projectsLoop->the_post();
 
-            $project_link = get_field( "project_link" );
-            $agency = get_field( "agency" );
-            $agency_link = get_field( "agency_link" );
-            $tech = get_field( "tech" );
-            $repository_link = get_field( "repository_link" );
-            $year = get_field("year");
+              $project_link = get_field( "project_link" );
+              $agency = get_field( "agency" );
+              $agency_link = get_field( "agency_link" );
+              $tech = get_field( "tech" );
+              $repository_link = get_field( "repository_link" );
+              $year = get_field("year");
 
-            include(locate_template("template-parts/projects/projects.php"));
-          endwhile;
-        ?>
+              include(locate_template("template-parts/projects/projects.php"));
+            endwhile;
+          ?>
+        </table>
       </div>
     </section>
   <?php
