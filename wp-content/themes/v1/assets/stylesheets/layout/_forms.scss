@@ -4,18 +4,16 @@ textarea {
 }
 
 input {
-
   &[type="submit"] {
+    @include native-overide;
     @include h5;
-    background-color: $callout;
-    color: $background;
-    padding: 1em 2em;
-
+    background-color: $callout !important;
+    color: $background !important;
+    padding: 1em 2em !important;
   }
 }
 
 // Gravity Forms
-
 .gfield {
   margin: 0 0 1.5em 0 important;
   padding: 0 !important;
@@ -60,4 +58,11 @@ input {
 
 .gfield_required {
   display: none;
+}
+
+#gform_submit_button_1 {
+  @include h5;
+  background-color: $callout !important;
+  color: $background !important;
+  padding: 1em 2em !important;
 }

@@ -17,3 +17,8 @@
 .hide {
   display: none;
 }
+
+// Native Override
+@mixin native-overide {
+  @include browser-prefix(appearance, none)
+}
