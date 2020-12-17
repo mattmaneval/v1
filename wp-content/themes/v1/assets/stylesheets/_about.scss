@@ -1,0 +1,60 @@
+.about {
+  background-color: $background-alt;
+  display: flex;
+
+  h3 {
+    margin-bottom: 6em;
+
+    // Secondary Mobile - Phone & Below
+     @media screen and (max-width: $phone) {
+        margin-bottom: 3em;
+     } // End Phone & Below
+  } // End h3
+
+  &-card {
+    display: flex;
+    background-color: $background;
+
+    // Secondary Mobile - Phone & Below
+     @media screen and (max-width: $phone) {
+        flex-direction: column;
+     } // End Phone & Below
+  } // End &-card
+
+  .content {
+    padding: 3.125em;
+    width: 60%;
+
+    // Secondary Mobile - Phone & Below
+     @media screen and (max-width: $phone) {
+        width: 100%;
+        padding: 2em;
+     } // End Phone & Below
+
+    p:last-of-type {
+      margin-bottom: $space;
+    }
+  } // End &-content
+
+  &-potrait {
+    width: 40%;
+    background-image: url("assets/images/potrait.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    // Secondary Mobile - Phone & Below
+     @media screen and (max-width: $phone) {
+        width: 100%;
+        height: 47vh;
+     } // End Phone & Below
+
+     &:before {
+       display: block;
+       content: "";
+       width: 100%;
+       padding-top: 115%;
+     }
+  } // End &-potrait
+}

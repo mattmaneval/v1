@@ -1,16 +1,38 @@
 .content {
+  ul {
+    display: inline-block;
+    column-count: 3;
 
-  // Lists
-  ul, ol {
+    // Secondary Mobile - Phone & Below
+     @media screen and (max-width: $phone) {
+        column-count: 2;
+     } // End Phone & Below
 
     li {
+      @include h5;
+      position: relative;
+      font-size: 0.9rem;
+      color: $callout;
+      margin: 0 0 0.65rem 1.1em;
 
-    }
-  } // End ul, ol
+      &:before {
+        top: -0.2em;
+        content: "";
+        width: 1.2em;
+        height: 1em;
+        position: absolute;
+        left: -1.5em;
+        background-image: url(assets/images/chevron-right.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      } // End &:before
+    } // End li
+  } // End ul
 
-  // Paragraph
   p {
-
+    margin-bottom: $half-space;
+    font-size: 1.1em;
   } // End p
 
   img {
@@ -26,7 +48,7 @@
   } // End figcaption
 
   // Headings
-  h2, h3, h4 {
+  h2, h3, h4,  {
 
   } //End Headings
 }

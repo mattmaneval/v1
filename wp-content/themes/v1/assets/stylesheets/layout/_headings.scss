@@ -1,3 +1,4 @@
+// h1
 @mixin h1 {
   font-family: $font;
   font-size: 6em;
@@ -10,48 +11,51 @@
   } // End Phone & Below
 }
 
-h1 {
-  @include h1;
-}
-
+// h2
 @mixin h2 {
-
+  color: $foreground;
+  font-family: $font;
+  font-size: 2.4em;
+  margin-bottom: $space;
 }
 
-h2 {
-  @include h2;
-}
-
-@mixin h3 {
-
-}
-
-h3 {
-  @include h3;
-}
-
+// h4
 @mixin h4 {
-
+  color: $foreground;
+  margin-bottom: $half-space;
+  text-transform: uppercase;
+  font-size: 0.83em;
+  letter-spacing: 0.26em;
+  line-height: 1.4;
+  font-family: $font-bold;
 }
 
-h4 {
-  @include h4;
-}
-
+// h5
 @mixin h5 {
   font-family: $font-medium;
   font-size: 1.1rem;
   letter-spacing: .05em;
 }
 
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include h2;
+}
+
+h3 {
+  @include h4;
+  position: relative;
+  display: inline-block;
+  color: $callout;
+}
+
+h4 {
+  @include h4;
+}
+
 h5 {
   @include h5;
-}
-
-@mixin h6 {
-
-}
-
-h6 {
-  @include h6;
 }
