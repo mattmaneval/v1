@@ -1,10 +1,9 @@
 <section class="about">
   <div class="wrap">
     <h3>About</h3>
-    <h2>I specialize in building exceptional websites.</h2>
     <div class="about-card">
       <div class="content">
-        <h4>At work</h4>
+        <h4>A brief history</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p>Outside of work I enjoy writing and recording music, running, and playing golf.</p>

@@ -47,6 +47,8 @@ h2 {
 
 h3 {
   @include h4;
+  position: relative;
+  display: inline-block;
   color: $callout;
 }
 
