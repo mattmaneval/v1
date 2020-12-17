@@ -1,0 +1,63 @@
+input,
+textarea {
+  background-color: $background;
+}
+
+input {
+
+  &[type="submit"] {
+    @include h5;
+    background-color: $callout;
+    color: $background;
+    padding: 1em 2em;
+
+  }
+}
+
+// Gravity Forms
+
+.gfield {
+  margin: 0 0 1.5em 0 important;
+  padding: 0 !important;
+}
+
+.gfield_label {
+  margin: 0 !important;
+  font-family: $font-medium;
+  text-transform: uppercase;
+  font-size: 0.65em !important;
+  letter-spacing: 0.26em;
+}
+
+.name_first,
+.name_last {
+  label {
+    display: none !important;
+  }
+}
+
+.ginput_complex {
+  margin: 0 !important;
+}
+
+.gform_wrapper {
+  margin: 0 !important;
+}
+
+.ginput_container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.gform_footer {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.ginput_container_textarea textarea {
+  height: 6em !important;
+}
+
+.gfield_required {
+  display: none;
+}

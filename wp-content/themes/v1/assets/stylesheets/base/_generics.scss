@@ -33,3 +33,7 @@
 .wrap {
   @include wrap($wrap, 64em);
 }
+
+.inner-wrap {
+  @include wrap($wrap, 54em);
+}
