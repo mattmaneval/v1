@@ -1,5 +1,6 @@
 .arrow-cta {
   @include h5;
+  font-family: $title;
   display: flex;
   align-items: center;
   padding: 0.65em 0;
