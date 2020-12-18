@@ -1,3 +1,28 @@
+// We work for you
+@font-face {
+	font-family: 'JoyrideRegular';
+	src: url('assets/fonts/joyride.eot');
+	src: url('assets/fonts/joyride.eot?#iefix') format('embedded-opentype'),
+             url('assets/fonts/joyride.woff2') format('woff2'),
+	     url('assets/fonts/joyride.woff') format('woff'),
+	     url('assets/fonts/joyride.ttf') format('truetype'),
+	     url('assets/fonts/joyride.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'JoyrideRound';
+	src: url('assets/fonts/joyride-round.eot');
+	src: url('assets/fonts/joyride-round.eot?#iefix') format('embedded-opentype'),
+             url('assets/fonts/joyride-round.woff2') format('woff2'),
+	     url('assets/fonts/joyride-round.woff') format('woff'),
+	     url('assets/fonts/joyride-round.ttf') format('truetype'),
+	     url('assets/fonts/joyride-round.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 // The League of Moveable Type
 @font-face {
     font-family: 'fanwooditalic';

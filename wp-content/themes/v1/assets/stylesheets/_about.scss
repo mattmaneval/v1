@@ -3,7 +3,7 @@
 
   &-card {
     display: flex;
-    background-color: $background;
+    background-color: $foreground;
 
     // Secondary Mobile - Phone & Below
      @media screen and (max-width: $phone) {

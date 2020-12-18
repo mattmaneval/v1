@@ -1,0 +1,46 @@
+.email-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 2.5em;
+  left: auto;
+  z-index: 10;
+  width: 2.5em;
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    display: none;
+  } // End Phone & Below
+
+  a {
+    @include animate;
+    writing-mode: vertical-rl;
+    padding: 0.625em;
+    font-family: $font;
+    color: $foreground;
+    letter-spacing: 0.075em;
+    font-size: 1em;
+
+    &:hover {
+      color: $callout;
+    }
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 0.063em;
+    height: 5.625em;
+    background-color: $foreground;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 0.063em;
+    height: 5.625em;
+    background-color: $foreground;
+  }
+}
