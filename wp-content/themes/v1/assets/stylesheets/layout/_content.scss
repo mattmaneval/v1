@@ -1,16 +1,14 @@
 .content {
   ul {
-    // display: inline-block;
-    column-count: 3;
+    column-count: 2;
 
     // Secondary Mobile - Phone & Below
      @media screen and (max-width: $phone) {
-        column-count: 2;
+        column-count: 1;
         margin-bottom: $space;
      } // End Phone & Below
 
     li {
-      position: relative;
       font-size: 0.9rem;
       margin: 0 0 0.65rem 0;
       font-family: $title;
