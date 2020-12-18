@@ -1,10 +1,10 @@
 .content {
   ul {
-    // column-count: 2;
-    // background-color: $background;
+    column-count: 2;
+    background-color: $background;
     padding: 2rem;
     margin-right: $space;
-    display: flex;
+    // display: flex;
 
 
     // Primary Mobile - Tablet & Below
@@ -22,11 +22,11 @@
 
     li {
       font-size: 1.1rem;
-      margin: 0 3em;
+      margin: 0 ;
       font-family: $title;
       text-transform: uppercase;
-      color: $background;
-      letter-spacing: 1em;
+      color: $foreground;
+      // letter-spacing: 1em;
     }
 
       // &:before {
