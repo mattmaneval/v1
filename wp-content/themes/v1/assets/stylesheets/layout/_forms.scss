@@ -1,0 +1,80 @@
+input,
+textarea {
+  background-color: $foreground;
+  border-bottom: 1px solid rgba( $background, 0.25);
+  padding: 0.65em;
+  outline: none;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type=text] {
+  font-family: $font;
+  font-size: 1.3rem;
+
+}
+
+::placeholder {
+  font-family: $font;
+}
+
+// Gravity Forms
+.gform_wrapper {
+  text-align: left;
+  background-color: $foreground;
+  padding: 5em;
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    padding: 3em 1.8em;
+  } // End Phone & Below
+}
+
+.gfield_required {
+  display: none;
+}
+
+.gform_body {
+  box-sizing: border-box;
+}
+
+.ginput_complex {
+  display: flex;
+  justify-content: space-between;
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    display: block;
+  } // End Phone & Below
+}
+
+.ginput_container {
+  margin-bottom: $space;
+}
+
+.ginput_container input {
+
+}
+
+.name_first label,
+.name_last label {
+  display: none;
+}
+
+.name_first {
+  margin-right: $space;
+}
+
+.gfield_label {
+  font-family: $font-bold;
+  text-transform: uppercase;
+  font-size: 0.65em;
+  letter-spacing: 0.26em;
+}
+
+.gfield_label label {
+  margin-bottom: $space;
+}

@@ -11,14 +11,16 @@
     </td>
     <td class="tech hide-on-mobile"><?php echo $tech; ?></td>
     <td class="links">
-      <?php if(empty($repository_link)) {} else { ?>
-        <a href="<?php echo $repository_link; ?>" target="_blank" rel="noopener noreferrer" title="Visit the <?php the_title(); ?> repository on GitHub.">
-          <svg><use xlink:href="#code"/></svg>
+      <div>
+        <?php if(empty($repository_link)) {} else { ?>
+          <a href="<?php echo $repository_link; ?>" target="_blank" rel="noopener noreferrer" title="Visit the <?php the_title(); ?> repository on GitHub.">
+            <svg><use xlink:href="#code"/></svg>
+          </a>
+        <?php } ?>
+        <a href="<?php echo $project_link; ?>" target="_blank" rel="noopener noreferrer" title="Visit <?php the_title(); ?>">
+          <svg><use xlink:href="#external-link"/></svg>
         </a>
-      <?php } ?>
-      <a href="<?php echo $project_link; ?>" target="_blank" rel="noopener noreferrer" title="Visit <?php the_title(); ?>">
-        <svg><use xlink:href="#external-link"/></svg>
-      </a>
+      </div>
     </td>
   </tr>
 </tbody>
