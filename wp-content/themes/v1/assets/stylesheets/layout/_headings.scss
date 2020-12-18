@@ -50,7 +50,7 @@ h3 {
   position: relative;
   display: inline-block;
   color: $background;
-  margin-bottom: 6em;
+  margin-bottom: $space;
 
   // Secondary Mobile - Phone & Below
    @media screen and (max-width: $phone) {
