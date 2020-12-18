@@ -65,3 +65,8 @@ h4 {
 h5 {
   @include h5;
 }
+
+h6 {
+  @include h2;
+  color: $background;
+}

@@ -3,11 +3,11 @@
     <h3>About</h3>
     <div class="about-card">
       <div class="content">
-        <h4>A brief history</h4>
+        <h6>A brief history</h6>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p>Outside of work I enjoy writing and recording music, running, and playing golf.</p>
-        <h4>Technologies I've been using:</h4>
+        <h6>Technologies I've been using:</h6>
         <ul>
           <li>Html</li>
           <li>Css</li>

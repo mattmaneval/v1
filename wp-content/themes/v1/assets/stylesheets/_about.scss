@@ -7,9 +7,12 @@
       background-color: $foreground;
    } // End Phone & Below
 
+   h2 {
+     color: $background;
+   }
+
   &-card {
     display: flex;
-    // background-color: $foreground;
 
     // Secondary Mobile - Phone & Below
      @media screen and (max-width: $phone) {
@@ -29,6 +32,12 @@
 
     p:last-of-type {
       margin-bottom: $space;
+    }
+
+    h6:last-of-type {
+      font-family: $title;
+      font-size: 1.1em;
+      text-transform: lowercase;
     }
   } // End &-content
 
