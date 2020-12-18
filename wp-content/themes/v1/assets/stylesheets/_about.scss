@@ -1,9 +1,15 @@
 .about {
   display: flex;
+  background-color: $foreground;
+
+  // Secondary Mobile - Phone & Below
+   @media screen and (max-width: $phone) {
+      background-color: $foreground;
+   } // End Phone & Below
 
   &-card {
     display: flex;
-    background-color: $foreground;
+    // background-color: $foreground;
 
     // Secondary Mobile - Phone & Below
      @media screen and (max-width: $phone) {
@@ -12,13 +18,13 @@
   } // End &-card
 
   .content {
-    padding: 3.125em;
+    // padding: 3.125em;
     width: 60%;
 
     // Secondary Mobile - Phone & Below
      @media screen and (max-width: $phone) {
         width: 100%;
-        padding: 2em;
+        padding: 0;
      } // End Phone & Below
 
     p:last-of-type {
