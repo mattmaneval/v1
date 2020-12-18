@@ -1,8 +1,7 @@
 .contact {
 
   &-form-card{
-    @include wrap($wrap, 54em);
-    // padding: 6em 8em;
+    @include wrap($wrap, 36em);
 
     p {
       font-size: 1.25em;

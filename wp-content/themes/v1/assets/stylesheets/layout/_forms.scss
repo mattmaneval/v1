@@ -1,10 +1,14 @@
 input,
 textarea {
   background-color: $foreground;
-  border-bottom: 1px solid rgba( $background, 0.25);
+  border-bottom: 1px solid $foreground;
   padding: 0.65em;
   outline: none;
   width: 100%;
+  background: transparent;
+  font-size: 1.5rem;
+  color: $foreground;
+  font-family: $font;
 }
 
 textarea {
@@ -12,24 +16,40 @@ textarea {
 }
 
 input[type=text] {
-  font-family: $font;
-  font-size: 1.3rem;
+  -webkit-appearance: none;
+}
 
+// Change Autocomplete styles in Chrome
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 1px solid $foreground;
+  -webkit-text-fill-color: $foreground;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 ::placeholder {
   font-family: $font;
+  color: $foreground;
 }
 
 // Gravity Forms
 .gform_wrapper {
   text-align: left;
-  background-color: $foreground;
-  padding: 5em;
+  // background-color: $foreground;
+  // padding: 5em;
 
   // Secondary Mobile - Phone & Below
   @media screen and (max-width: $phone) {
-    padding: 3em 1.8em;
+    // padding: 3em 1.8em;
   } // End Phone & Below
 }
 
@@ -73,6 +93,7 @@ input[type=text] {
   text-transform: uppercase;
   font-size: 0.65em;
   letter-spacing: 0.26em;
+  color: $foreground;
 }
 
 .gfield_label label {
