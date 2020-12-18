@@ -14,8 +14,7 @@
     display: flex;
     background-color: $foreground;
     padding: 4em 3em;
-    box-shadow: 1.8em 1.7em 2.3em -0.4em rgba($background, 0.3);
-
+    
     // Primary Mobile - Tablet & Below
     @media screen and (max-width: $tablet) {
       flex-direction: column;

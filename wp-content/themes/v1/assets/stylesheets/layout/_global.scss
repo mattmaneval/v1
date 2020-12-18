@@ -73,7 +73,8 @@ p {
 
   a {
     @include animate;
-    color: $foreground;
+    color: $background;
+    text-decoration: underline;
 
     &:hover {
       color: $callout;

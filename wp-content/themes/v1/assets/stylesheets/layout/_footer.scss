@@ -1,3 +1,20 @@
 footer {
-  height: 25em;
+  padding: 6em 0;
+  background-color: $foreground;
+
+  .mini-wrap {
+    @include wrap($wrap, 38em);
+    text-align: center;
+  }
+
+  img {
+    width: 27em;
+    margin-bottom: $space;
+  }
+
+  p {
+    text-align: center;
+    font-family: $font-medium;
+    margin-bottom: $half-space;
+  }
 }

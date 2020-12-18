@@ -13,10 +13,26 @@ textarea {
 
 textarea {
   resize: none;
+  height: 8em;
 }
 
 input[type=text] {
   -webkit-appearance: none;
+}
+
+input[type=submit] {
+  @include animate;
+  background-color: $foreground;
+  color: $background;
+  width: 10em;
+  font-family: $font-medium;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $background;
+    color: $foreground;
+  }
 }
 
 // Change Autocomplete styles in Chrome
@@ -44,21 +60,10 @@ select:-webkit-autofill:focus {
 // Gravity Forms
 .gform_wrapper {
   text-align: left;
-  // background-color: $foreground;
-  // padding: 5em;
-
-  // Secondary Mobile - Phone & Below
-  @media screen and (max-width: $phone) {
-    // padding: 3em 1.8em;
-  } // End Phone & Below
 }
 
 .gfield_required {
   display: none;
-}
-
-.gform_body {
-  box-sizing: border-box;
 }
 
 .ginput_complex {
@@ -73,10 +78,6 @@ select:-webkit-autofill:focus {
 
 .ginput_container {
   margin-bottom: $space;
-}
-
-.ginput_container input {
-
 }
 
 .name_first label,
