@@ -1,29 +1,46 @@
 .about {
-  background-color: $background-alt;
   display: flex;
+
+  // Primary Mobile - Tablet & Below
+  @media screen and (max-width: $tablet) {
+    background-color: $foreground;
+  } // End Tablet & Below
+
+   h2 {
+     color: $background;
+   }
 
   &-card {
     display: flex;
-    background-color: $background;
+    background-color: $foreground;
+    padding: 4em 3em;
+    box-shadow: 1.8em 1.7em 2.3em -0.4em rgba($background, 0.3);
 
-    // Secondary Mobile - Phone & Below
-     @media screen and (max-width: $phone) {
-        flex-direction: column;
-     } // End Phone & Below
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      padding: 0;
+    } // End Tablet & Below
   } // End &-card
 
   .content {
-    padding: 3.125em;
+    // padding: 3.125em;
     width: 60%;
 
-    // Secondary Mobile - Phone & Below
-     @media screen and (max-width: $phone) {
-        width: 100%;
-        padding: 2em;
-     } // End Phone & Below
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      padding: 0;
+    } // End Tablet & Below
 
     p:last-of-type {
       margin-bottom: $space;
+    }
+
+    h6:last-of-type {
+      font-family: $title;
+      font-size: 1.1em;
+      text-transform: lowercase;
     }
   } // End &-content
 
@@ -34,12 +51,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    z-index: 1;
+
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      height: 62vh;
+    } // End Tablet & Below
 
     // Secondary Mobile - Phone & Below
-     @media screen and (max-width: $phone) {
-        width: 100%;
-        height: 47vh;
-     } // End Phone & Below
+    @media screen and (max-width: $phone) {
+      height: 47vh;
+    } // End Phone & Below
 
      &:before {
        display: block;

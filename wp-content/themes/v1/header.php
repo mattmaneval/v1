@@ -8,4 +8,5 @@
 	<body <?php body_class(); ?>>
 		<?php
 			get_template_part('template-parts/svg-sprite');
+			get_template_part('template-parts/header');
 		?>

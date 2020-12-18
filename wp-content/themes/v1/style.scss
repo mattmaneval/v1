@@ -16,10 +16,10 @@ $phone: 767px;
 $small-phone:480px;
 
 // Colors
-$background: #fcfcfa;
+$background: #000000;
 $background-alt: #f5e6d0;
-$foreground: #0a192f;
-$callout: #a81432;
+$foreground: #fcfcfa;
+$callout: #23d5ab;
 $text-select: #ffa500;
 
 // Space
@@ -34,6 +34,7 @@ $font-medium: "LeagueSpartan-Medium";
 $font-semibold: "LeagueSpartan-SemiBold";
 $font-bold: "LeagueSpartan-Bold";
 $font-italic: "fanwooditalic";
+$title: "JoyrideRound";
 
 // Misc
 $box-shadow: 1em 1em 4em -2em $background;
@@ -55,11 +56,14 @@ $box-shadow: 1em 1em 4em -2em $background;
 
 // Shared
 @import "assets/stylesheets/navigation/arrow-cta";
+@import "assets/stylesheets/navigation/socials-bar";
+@import "assets/stylesheets/navigation/email-bar";
 
 // // Modules
 @import "assets/stylesheets/hero";
-@import "assets/stylesheets/about";
 @import "assets/stylesheets/projects-archive";
+@import "assets/stylesheets/about";
+@import "assets/stylesheets/contact";
 
 // // Media Queries
 

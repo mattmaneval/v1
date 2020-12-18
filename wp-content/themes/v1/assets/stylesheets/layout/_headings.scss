@@ -1,13 +1,19 @@
 // h1
 @mixin h1 {
-  font-family: $font;
-  font-size: 6em;
+  font-family: $title;
+  font-size: 8em;
   color: $foreground;
   margin-bottom: 1rem;
+  letter-spacing: -0.02EM;
+
+  // Primary Mobile - Tablet & Below
+  @media screen and (max-width: $tablet) {
+    font-size: 5em;
+  } // End Tablet & Below
 
   // Secondary Mobile - Phone & Below
   @media screen and (max-width: $phone) {
-    font-size: 4em;
+    font-size: 2.5em;
   } // End Phone & Below
 }
 
@@ -21,7 +27,7 @@
 
 // h4
 @mixin h4 {
-  color: $foreground;
+  color: $background;
   margin-bottom: $half-space;
   text-transform: uppercase;
   font-size: 0.83em;
@@ -49,8 +55,8 @@ h3 {
   @include h4;
   position: relative;
   display: inline-block;
-  color: $callout;
-  margin-bottom: 6em;
+  color: $background;
+  margin-bottom: $space;
 
   // Secondary Mobile - Phone & Below
    @media screen and (max-width: $phone) {
@@ -64,4 +70,9 @@ h4 {
 
 h5 {
   @include h5;
+}
+
+h6 {
+  @include h2;
+  color: $background;
 }
