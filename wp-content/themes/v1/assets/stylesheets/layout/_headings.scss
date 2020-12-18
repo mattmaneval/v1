@@ -1,13 +1,19 @@
 // h1
 @mixin h1 {
   font-family: $title;
-  font-size: 6em;
+  font-size: 8em;
   color: $foreground;
   margin-bottom: 1rem;
+  letter-spacing: -0.02EM;
+
+  // Primary Mobile - Tablet & Below
+  @media screen and (max-width: $tablet) {
+    font-size: 5em;
+  } // End Tablet & Below
 
   // Secondary Mobile - Phone & Below
   @media screen and (max-width: $phone) {
-    font-size: 2em;
+    font-size: 2.5em;
   } // End Phone & Below
 }
 

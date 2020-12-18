@@ -1,0 +1,22 @@
+.header {
+  padding: 3em 0;
+
+  .wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    width: 25%;
+
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      width: 50%;
+    } // End Tablet & Below
+
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+      width: 100%;
+    } // End Phone & Below
+  }
+}

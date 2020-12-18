@@ -4,12 +4,19 @@ $transition: 1s all ease-in;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
   width: 2.5em;
   position: fixed;
   top: 0;
-  left: 2.5em;
+  left: 1.25em;
   right: auto;
   z-index: 10;
+
+  // Primary Mobile - Tablet & Below
+  @media screen and (max-width: $tablet) {
+    justify-content: flex-end;
+  } // End Tablet & Below
 
   // Secondary Mobile - Phone & Below
   @media screen and (max-width: $phone) {
@@ -26,7 +33,7 @@ $transition: 1s all ease-in;
       width: 1.25em;
 
       &, use {
-        fill: $foreground;
+        fill: rgba($foreground, 0.5);
       }
     }
 
@@ -44,15 +51,20 @@ $transition: 1s all ease-in;
     content: "";
     display: block;
     width: 0.063em;
-    height: 5.625em;
-    background-color: $foreground;
+    height: 20%;
+    background-color: rgba($foreground, 0.5);
+
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      display: none;
+    } // End Tablet & Below
   }
 
-  // &:after {
-  //   content: "";
-  //   display: block;
-  //   width: 0.063em;
-  //   height: 5.625em;
-  //   background-color: $foreground;
-  // }
+  &:after {
+    content: "";
+    display: block;
+    width: 0.063em;
+    height: 20%;
+    background-color: rgba($foreground, 0.5);
+  }
 }

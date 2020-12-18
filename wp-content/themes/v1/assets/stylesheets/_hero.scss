@@ -1,3 +1,10 @@
+.hero h1 span {
+  font-size: 1.9rem;
+display: block;
+letter-spacing: 0.01em;
+font-family: $font-bold;
+}
+
 .hero-cta {
   display: inline-block;
   color: $foreground;
