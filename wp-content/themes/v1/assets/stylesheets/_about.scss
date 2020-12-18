@@ -1,11 +1,10 @@
 .about {
   display: flex;
-  background-color: $foreground;
 
-  // Secondary Mobile - Phone & Below
-   @media screen and (max-width: $phone) {
-      background-color: $foreground;
-   } // End Phone & Below
+  // Primary Mobile - Tablet & Below
+  @media screen and (max-width: $tablet) {
+    background-color: $foreground;
+  } // End Tablet & Below
 
    h2 {
      color: $background;
@@ -13,22 +12,26 @@
 
   &-card {
     display: flex;
+    background-color: $foreground;
+    padding: 4em 3em;
+    box-shadow: 1.8em 1.7em 2.3em -0.4em rgba($background, 0.3);
 
-    // Secondary Mobile - Phone & Below
-     @media screen and (max-width: $phone) {
-        flex-direction: column;
-     } // End Phone & Below
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      padding: 0;
+    } // End Tablet & Below
   } // End &-card
 
   .content {
     // padding: 3.125em;
     width: 60%;
 
-    // Secondary Mobile - Phone & Below
-     @media screen and (max-width: $phone) {
-        width: 100%;
-        padding: 0;
-     } // End Phone & Below
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      padding: 0;
+    } // End Tablet & Below
 
     p:last-of-type {
       margin-bottom: $space;
@@ -48,12 +51,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    z-index: 1;
+
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+      height: 62vh;
+    } // End Tablet & Below
 
     // Secondary Mobile - Phone & Below
-     @media screen and (max-width: $phone) {
-        width: 100%;
-        height: 47vh;
-     } // End Phone & Below
+    @media screen and (max-width: $phone) {
+      height: 47vh;
+    } // End Phone & Below
 
      &:before {
        display: block;
@@ -62,4 +71,64 @@
        padding-top: 115%;
      }
   } // End &-potrait
+}
+
+
+//  Slider
+// @mixin white-gradient {
+// 	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+// }
+
+$animationSpeed: 40s;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Styling
+.slider {
+	// background: white;
+	// box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 100px;
+	margin: auto;
+	// overflow:hidden;
+	position: relative;
+	width: 100vw;
+  z-index: 2;
+
+
+	// &::before,
+	// &::after {
+	// 	@include white-gradient;
+	// 	content: "";
+	// 	height: 100px;
+	// 	position: absolute;
+	// 	width: 200px;
+	// 	z-index: 2;
+	// }
+
+	// &::after {
+	// 	right: 0;
+	// 	top: 0;
+	// 	transform: rotateZ(180deg);
+	// }
+  //
+	// &::before {
+	// 	left: 0;
+	// 	top: 0;
+	// }
+
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+
+	// .slide {
+	// 	height: 100px;
+	// 	width: 250px;
+	// }
 }

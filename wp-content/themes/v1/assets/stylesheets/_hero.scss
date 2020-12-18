@@ -1,11 +1,11 @@
 .hero h1 span {
-  font-size: 1.9rem;
-display: block;
-letter-spacing: 0.01em;
-font-family: $font-bold;
-}
+  font-size: 2.3rem;
+  display: block;
+  letter-spacing: 0.01em;
+  font-family: $font-bold;
 
-.hero-cta {
-  display: inline-block;
-  color: $foreground;
-} // End .hero-cta
+  // Primary Mobile - Tablet & Below
+  @media screen and (max-width: $tablet) {
+    font-size: 1.4rem;
+  } // End Tablet & Below
+}

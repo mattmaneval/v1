@@ -8,15 +8,17 @@
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p>Outside of work I enjoy writing and recording music, running, and playing golf.</p>
         <h6>Technologies I've been using:</h6>
-        <ul>
-          <li>Html</li>
-          <li>Css</li>
-          <li></li>
-          <li>Sass</li>
-          <li>React</li>
-          <li>Wordpress</li>
-          <li>Gatsby</li>
-        </ul>
+        <div class="slider">
+          <ul class="slide-track">
+            <li class="slide">Html</li>
+            <li class="slide">Css</li>
+            <li class="slide">Sass</li>
+            <li class="slide">React</li>
+            <li class="slide">Wordpress</li>
+            <li class="slide">Gatsby</li>
+          </ul>
+        </div>
+
       </div>
       <div class="about-potrait"></div>
     </div>

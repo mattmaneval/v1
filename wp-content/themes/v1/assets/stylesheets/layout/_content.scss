@@ -1,18 +1,32 @@
 .content {
   ul {
-    column-count: 2;
+    // column-count: 2;
+    // background-color: $background;
+    padding: 2rem;
+    margin-right: $space;
+    display: flex;
+
+
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      margin-right: 0;
+      margin-bottom: $space;
+    } // End Tablet & Below
 
     // Secondary Mobile - Phone & Below
      @media screen and (max-width: $phone) {
         column-count: 1;
+        margin-right: 0;
         margin-bottom: $space;
      } // End Phone & Below
 
     li {
-      font-size: 0.9rem;
-      margin: 0 0 0.65rem 0;
+      font-size: 1.1rem;
+      margin: 0 3em;
       font-family: $title;
       text-transform: uppercase;
+      color: $background;
+      letter-spacing: 1em;
     }
 
       // &:before {
