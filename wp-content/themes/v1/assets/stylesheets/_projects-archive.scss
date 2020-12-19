@@ -1,7 +1,8 @@
 .projects-archive {
 
   td.year {
-    @include h4;
+    color: rgba($background, 0.55);
+    font-family: $title;
   }
 
   td.title {
@@ -17,9 +18,10 @@
   td.agency {
     @include h5;
 
+
     a {
       @include animate;
-      color: $foreground;
+      color: rgba($foreground, 0.75);
 
       &:hover {
         color: $callout;
@@ -28,7 +30,8 @@
   }
 
   td.tech {
-    @include p;
+    @include h5;
+    color: rgba($foreground, 0.75);
   }
 
   td.links {
@@ -36,7 +39,7 @@
     div {
       display: flex;
     }
-    
+
       a {
         padding-left: 0.35em;
 

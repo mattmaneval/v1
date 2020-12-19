@@ -10,6 +10,11 @@ footer {
   img {
     width: 27em;
     margin-bottom: $space;
+
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      width: 16em;
+    } // End Tablet & Below
   }
 
   p {

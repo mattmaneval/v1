@@ -9,6 +9,8 @@ textarea {
   font-size: 1.5rem;
   color: $foreground;
   font-family: $font;
+  border-radius: 0;
+  -webkit-appearance: none;
 }
 
 textarea {
@@ -21,18 +23,15 @@ input[type=text] {
 }
 
 input[type=submit] {
-  @include animate;
-  background-color: $foreground;
-  color: $background;
-  width: 10em;
-  font-family: $font-medium;
+  @include cta;
   border: none;
-  cursor: pointer;
+  -webkit-appearance: none;
+  padding: 1em;
 
-  &:hover {
-    background-color: $background;
-    color: $foreground;
-  }
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    width: 100%;
+  } // End Phone & Below
 }
 
 // Change Autocomplete styles in Chrome
@@ -99,4 +98,13 @@ select:-webkit-autofill:focus {
 
 .gfield_label label {
   margin-bottom: $space;
+}
+
+.gform_footer {
+  display: inline-block;
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    display: block;
+  } // End Phone & Below
 }
