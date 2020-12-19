@@ -1,14 +1,20 @@
 .email-bar {
-  // display: flex;
-  display: none;;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: fixed;
   bottom: 0;
+  height: 100vh;
   right: 2.5em;
   left: auto;
   z-index: 10;
   width: 2.5em;
+
+  // Primary Mobile - Tablet & Below
+  @media screen and (max-width: $tablet) {
+    justify-content: flex-end;
+  } // End Tablet & Below
 
   // Secondary Mobile - Phone & Below
   @media screen and (max-width: $phone) {
@@ -33,15 +39,20 @@
     content: "";
     display: block;
     width: 0.063em;
-    height: 5.625em;
+    height: 20%;
     background-color: $foreground;
+
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      display: none;
+    } // End Tablet & Below
   }
 
   &:after {
     content: "";
     display: block;
     width: 0.063em;
-    height: 5.625em;
+    height: 20%;
     background-color: $foreground;
   }
 }

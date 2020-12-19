@@ -1,3 +1,25 @@
 footer {
-  height: 25em;
+  padding: 6em 0;
+  background-color: $foreground;
+
+  .mini-wrap {
+    @include wrap($wrap, 38em);
+    text-align: center;
+  }
+
+  img {
+    width: 27em;
+    margin-bottom: $space;
+
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      width: 16em;
+    } // End Tablet & Below
+  }
+
+  p {
+    text-align: center;
+    font-family: $font-medium;
+    margin-bottom: $half-space;
+  }
 }

@@ -2,10 +2,8 @@
   ul {
     column-count: 2;
     background-color: $background;
-    padding: 2rem;
-    margin-right: $space;
-    // display: flex;
-
+    padding: 2rem 2rem 0.8rem 2rem;
+    padding-right: $space;
 
     // Primary Mobile - Tablet & Below
     @media screen and (max-width: $tablet) {
@@ -21,26 +19,12 @@
      } // End Phone & Below
 
     li {
-      font-size: 1.1rem;
-      margin: 0 ;
+      font-size: 1rem;
+      letter-spacing: 0.21em;
       font-family: $title;
       text-transform: uppercase;
       color: $foreground;
-      // letter-spacing: 1em;
-    }
-
-      // &:before {
-      //   top: -0.2em;
-      //   content: "";
-      //   width: 1.2em;
-      //   height: 1em;
-      //   position: absolute;
-      //   left: -1.5em;
-      //   background-image: url(assets/images/chevron-right.svg);
-      //   background-repeat: no-repeat;
-      //   background-size: contain;
-      //   background-position: center;
-      // } // End &:before
+      margin-bottom: 1.2rem;
     } // End li
   } // End ul
 
@@ -58,3 +42,5 @@
 //   // Headings
 //   h2, h3, h4,  {} // End Headings
 // }
+
+} // End .content

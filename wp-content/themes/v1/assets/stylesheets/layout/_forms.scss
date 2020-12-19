@@ -9,14 +9,29 @@ textarea {
   font-size: 1.5rem;
   color: $foreground;
   font-family: $font;
+  border-radius: 0;
+  -webkit-appearance: none;
 }
 
 textarea {
   resize: none;
+  height: 8em;
 }
 
 input[type=text] {
   -webkit-appearance: none;
+}
+
+input[type=submit] {
+  @include cta;
+  border: none;
+  -webkit-appearance: none;
+  padding: 1em;
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    width: 100%;
+  } // End Phone & Below
 }
 
 // Change Autocomplete styles in Chrome
@@ -44,21 +59,10 @@ select:-webkit-autofill:focus {
 // Gravity Forms
 .gform_wrapper {
   text-align: left;
-  // background-color: $foreground;
-  // padding: 5em;
-
-  // Secondary Mobile - Phone & Below
-  @media screen and (max-width: $phone) {
-    // padding: 3em 1.8em;
-  } // End Phone & Below
 }
 
 .gfield_required {
   display: none;
-}
-
-.gform_body {
-  box-sizing: border-box;
 }
 
 .ginput_complex {
@@ -73,10 +77,6 @@ select:-webkit-autofill:focus {
 
 .ginput_container {
   margin-bottom: $space;
-}
-
-.ginput_container input {
-
 }
 
 .name_first label,
@@ -98,4 +98,13 @@ select:-webkit-autofill:focus {
 
 .gfield_label label {
   margin-bottom: $space;
+}
+
+.gform_footer {
+  display: inline-block;
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    display: block;
+  } // End Phone & Below
 }
