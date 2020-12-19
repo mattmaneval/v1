@@ -1,10 +1,3 @@
-.contact {
-
-  &-form-card{
-    @include wrap($wrap, 36em);
-
-    p {
-      font-size: 1.25em;
-    }
-  }
+.contact-form-card {
+  @include wrap($wrap, 36em);
 }

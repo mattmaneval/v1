@@ -6,14 +6,10 @@
     background-color: $foreground;
   } // End Tablet & Below
 
-   h2 {
-     color: $background;
-   }
-
   &-card {
     display: flex;
     background-color: $foreground;
-    padding: 4em 3em;
+    // padding: 4em 3em;
     box-shadow: 0.6em 0.4em 1.4em 0.7em rgba($background, 0.2);
 
     // Primary Mobile - Tablet & Below
@@ -25,7 +21,6 @@
   } // End &-card
 
   .content {
-    // padding: 3.125em;
     width: 60%;
 
     // Primary Mobile - Tablet & Below
@@ -37,13 +32,30 @@
     p:last-of-type {
       margin-bottom: $space;
     }
+  } // End &-content
 
-    h6:last-of-type {
+  &-bio,
+  &-list {
+    padding: 1.85em;
+  }
+
+  &-bio {
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      padding: 0;
+    } // End Tablet & Below
+  }
+
+  &-list {
+    background-color: $background;
+
+    h6 {
       font-family: $title;
       font-size: 1.1em;
       text-transform: lowercase;
+      color: $foreground;
     }
-  } // End &-content
+  }
 
   &-potrait {
     width: 40%;

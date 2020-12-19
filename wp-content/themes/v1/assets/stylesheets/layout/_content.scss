@@ -1,9 +1,6 @@
 .content {
   ul {
     column-count: 2;
-    background-color: $background;
-    padding: 2rem 2rem 0.8rem 2rem;
-    padding-right: $space;
 
     // Primary Mobile - Tablet & Below
     @media screen and (max-width: $tablet) {
