@@ -1,3 +1,14 @@
+// Flex Center
+@mixin flex-center($direction: "") {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @if $direction != "" {
+    flex-direction: column;
+  }
+}
+
 // Browser Prefix
 @mixin browser-prefix($property, $value) {
   -webkit-#{$property}: $value;

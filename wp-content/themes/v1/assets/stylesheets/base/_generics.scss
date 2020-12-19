@@ -1,20 +1,3 @@
-// Curtain
-@mixin curtain($position: fixed, $color: $foreground) {
-  background-color: $color;
-  bottom: 0;
-  display: none;
-  height: 100%;
-  left: 0;
-  position: $position;
-  top: 0;
-  width: 100%;
-  z-index: 3;
-}
-
-.curtain {
-  @include curtain;
-}
-
 // Wrap
 @mixin wrap($width: $wrap, $max-width: auto) {
   display: block;
@@ -33,7 +16,6 @@
 .wrap {
   @include wrap($wrap, 64em);
 }
-
 
 .cta {
   display: inline-block;
