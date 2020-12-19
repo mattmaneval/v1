@@ -2,8 +2,8 @@
   ul {
     column-count: 2;
     background-color: $background;
-    padding: 2rem;
-    margin-right: $space;
+    padding: 2rem 2rem 0.8rem 2rem;
+    padding-right: $space;
 
     // Primary Mobile - Tablet & Below
     @media screen and (max-width: $tablet) {
@@ -19,11 +19,12 @@
      } // End Phone & Below
 
     li {
-      font-size: 1.1rem;
-      margin: 0 ;
+      font-size: 1rem;
+      letter-spacing: 0.21em;
       font-family: $title;
       text-transform: uppercase;
       color: $foreground;
+      margin-bottom: 1.2rem;
     } // End li
   } // End ul
 

@@ -5,6 +5,12 @@ body {
   background-size: 400% 400%;
   animation: gradient 30s ease infinite;
 
+  // Primary Mobile - Tablet & Below
+  @media screen and (max-width: $tablet) {
+    background: #23a6d5;
+    background-color: #23a6d5;
+  } // End Tablet & Below
+
   &:before {
   	animation: grain 8s steps(10) infinite;
   	background-image: url('assets/images/noise.png');

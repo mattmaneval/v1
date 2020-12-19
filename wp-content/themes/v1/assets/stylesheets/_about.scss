@@ -14,11 +14,13 @@
     display: flex;
     background-color: $foreground;
     padding: 4em 3em;
-    
+    box-shadow: 0.6em 0.4em 1.4em 0.7em rgba($background, 0.2);
+
     // Primary Mobile - Tablet & Below
     @media screen and (max-width: $tablet) {
       flex-direction: column;
       padding: 0;
+      box-shadow: none;
     } // End Tablet & Below
   } // End &-card
 
