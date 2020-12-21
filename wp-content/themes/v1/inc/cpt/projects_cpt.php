@@ -27,7 +27,7 @@
       'show_ui' => true,
       'show_in_menu' => true,
       'menu_position' => 5,
-      'menu_icon' => 'dashicons-post-status',
+      'menu_icon' => 'dashicons-hammer',
       'show_in_nav_menus' => false,
       'show_in_rest' => true,
       'publicly_queryable' => true,

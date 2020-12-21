@@ -13,9 +13,9 @@
         <table>
           <thead>
             <tr>
-              <th>Year</th>
+              <th class="hide-on-mobile">Year</th>
               <th>Project</th>
-              <th class="hide-on-mobile">Agency</th>
+              <th >Agency</th>
               <th class="hide-on-mobile">Tech</th>
               <th>Links</th>
             </tr>

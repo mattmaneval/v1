@@ -1,8 +1,8 @@
 <tbody>
   <tr>
-    <td class="year"><?php echo $year; ?></td>
+    <td class="year hide-on-mobile"><?php echo $year; ?></td>
     <td class="title"><?php the_title(); ?></td>
-    <td class="agency hide-on-mobile">
+    <td class="agency">
       <?php if(empty($agency)) { ?>
         <span>┄</span>
       <?php } else { ?>
