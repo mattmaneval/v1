@@ -2,20 +2,9 @@ body {
   // background: linear-gradient(-45deg, #0e5aa4 30%, $foreground 1%, #fcad39, #f6393d, #f9003f, #ca0368, #382e6e);
   // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   // background: linear-gradient(-45deg, #FFFFCC, #f9003f, #23a6d5, #23d5ab);
-  // background-size: 15% 15%; // Jagged Edges
   background: linear-gradient(-45deg, $foreground, #fcad39, #f6393d, #f9003f 50%, #23a6d5  50%);
   background-size: 150% 150%;
-  // background-size: 400% 400%;
   animation: gradient 45s ease infinite;
-  // height: 100%;
-  // width: 100vw;
-  // background-attachment: fixed;
-
-  // Primary Mobile - Tablet & Below
-  @media screen and (max-width: $tablet) {
-    // background: #23a6d5;
-    // background-color: #23a6d5;
-  } // End Tablet & Below
 
   &:before {
   	animation: grain 8s steps(10) infinite;
@@ -85,25 +74,11 @@ p {
 
   a {
     @include animate;
-    color: $background;
+    color: $foreground;
     text-decoration: underline;
 
     &:hover {
       color: $callout;
     }
-  }
-}
-
-strong {
-
-  em {
-
-  }
-}
-
-em {
-
-  strong {
-
   }
 }
