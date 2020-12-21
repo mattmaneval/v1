@@ -1,11 +1,11 @@
 // Flex Center
-@mixin flex-center($direction: "") {
+@mixin flexible($justify: center, $align: center, $direction: "") {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: $justify;
+  align-items: $align;
 
   @if $direction != "" {
-    flex-direction: column;
+    flex-direction: $direction;
   }
 }
 

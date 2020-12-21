@@ -1,5 +1,5 @@
 .email-bar {
-  @include flex-center($direction: column);
+  @include flexible($direction: column);
   position: fixed;
   bottom: 0;
   height: 100vh;

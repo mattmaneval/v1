@@ -1,10 +1,9 @@
 @mixin cta {
+  @include flexible;
   @include animate;
   font-family: $title;
   font-size: 1.1rem;
   letter-spacing: .05em;
-  display: flex;
-  align-items: center;
   padding: 0.65em 0;
   font-size: 0.8em;
   cursor: pointer;
