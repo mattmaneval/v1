@@ -1,6 +1,6 @@
 <?php gravity_form_enqueue_scripts( 1, true ); ?>
 
-<section class="contact">
+<section class="contact" id="contact">
   <div class="contact-form-card">
     <h4>Have an idea?</h4>
     <h2>Let's have a conversation.</h2>
