@@ -9,7 +9,6 @@
   &-card {
     display: flex;
     background-color: $foreground;
-    // padding: 4em 3em;
     box-shadow: 0.6em 0.4em 1.4em 0.7em rgba($background, 0.2);
 
     // Primary Mobile - Tablet & Below
@@ -44,7 +43,7 @@
     @media screen and (max-width: $tablet) {
       padding: 0;
     } // End Tablet & Below
-  }
+  } // End &-bio
 
   &-list {
     background-color: $background;
@@ -55,7 +54,7 @@
       text-transform: lowercase;
       color: $foreground;
     }
-  }
+  } // End &-list
 
   &-potrait {
     width: 40%;
@@ -78,10 +77,10 @@
     } // End Phone & Below
 
      &:before {
-       display: block;
-       content: "";
-       width: 100%;
-       padding-top: 115%;
-     }
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 115%;
+    }
   } // End &-potrait
-}
+} // End About

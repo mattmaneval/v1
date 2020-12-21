@@ -84,8 +84,13 @@ select:-webkit-autofill:focus {
   display: none;
 }
 
-.name_first {
+.name_first input {
   margin-right: $space;
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    margin-bottom: $space;
+  } // End Phone & Below
 }
 
 .gfield_label {

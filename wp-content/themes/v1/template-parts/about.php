@@ -12,12 +12,12 @@
         <div class="about-list">
           <h6>Technologies I've been using:</h6>
           <ul>
-            <li>Html</li>
-            <li>Css</li>
-            <li>Sass</li>
-            <li>React</li>
-            <li>Wordpress</li>
-            <li>Gatsby</li>
+            <li>html</li>
+            <li>css</li>
+            <li>sass</li>
+            <li>react</li>
+            <li>wordpress</li>
+            <li>gatsby</li>
           </ul>
         </div>
       </div>
