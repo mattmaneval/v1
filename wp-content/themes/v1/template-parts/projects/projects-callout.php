@@ -16,6 +16,7 @@
               <th class="hide-on-mobile">Year</th>
               <th>Project</th>
               <th >Agency</th>
+              <th class="hide-on-mobile">Role</th>
               <th class="hide-on-mobile">Tech</th>
               <th>Links</th>
             </tr>
@@ -26,6 +27,7 @@
               $project_link = get_field( "project_link" );
               $agency = get_field( "agency" );
               $agency_link = get_field( "agency_link" );
+              $role = get_field( "role" );
               $tech = get_field( "tech" );
               $repository_link = get_field( "repository_link" );
               $year = get_field("year");

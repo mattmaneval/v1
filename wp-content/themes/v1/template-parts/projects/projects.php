@@ -9,6 +9,7 @@
           <a href="<?php echo $agency_link; ?>" target="_blank" rel="noopener noreferrer" title="Visit <?php echo $agency; ?>"><?php echo $agency; ?></a>
       <?php } ?>
     </td>
+    <td class="tech hide-on-mobile"><?php echo $role; ?></td>
     <td class="tech hide-on-mobile"><?php echo $tech; ?></td>
     <td class="links">
       <div>
