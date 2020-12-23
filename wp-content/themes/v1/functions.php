@@ -8,4 +8,7 @@ require('inc/asset_queue.php');
 // Custom Post Types
 require('inc/cpt/projects_cpt.php');
 
+// Functions
+require('inc/form_confirmation_anchor.php');
+
 ?>
