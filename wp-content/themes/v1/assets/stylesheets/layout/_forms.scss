@@ -113,3 +113,9 @@ select:-webkit-autofill:focus {
     display: block;
   } // End Phone & Below
 }
+
+.gform_confirmation_message {
+  font-family: $font;
+  color: $foreground;
+  font-size: 1.65em;
+}
