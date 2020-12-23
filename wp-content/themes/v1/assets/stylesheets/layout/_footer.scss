@@ -2,25 +2,45 @@ footer {
   padding: 6em 0;
   background-color: $background;
 
-  .mini-wrap {
-    @include wrap($wrap, 38em);
-    text-align: center;
-  }
-
   img {
-    width: 27em;
+    width: 15em;
     margin-bottom: $space;
 
     // Primary Mobile - Tablet & Below
     @media screen and (max-width: $tablet) {
       width: 16em;
     } // End Tablet & Below
-  }
+  } // End img
+
+  .footer-flex {
+    display: flex;
+    justify-content: space-between;
+
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+    } // End Tablet & Below
+  } // End .footer-flex
 
   p {
-    text-align: center;
     font-family: $font-medium;
     margin-bottom: $half-space;
+    max-width: 15rem;
     color: $foreground;
-  }
+    padding: $half-space;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      max-width: 100%;
+      padding: 0;
+    } // End Tablet & Below
+  } // End p
 }
