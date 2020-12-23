@@ -84,6 +84,12 @@ select:-webkit-autofill:focus {
   display: none;
 }
 
+.validation_error, .validation_message {
+  color: $callout;
+  line-height: 1.6;
+  margin-bottom: $half-space;
+}
+
 .name_first input {
   margin-right: $space;
 
