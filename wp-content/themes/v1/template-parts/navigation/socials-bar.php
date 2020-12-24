@@ -11,10 +11,10 @@
   <a class="socials-bar-link" target="_blank" href="https://twitter.com/mattwmaneval" title="Twitter">
     <svg><use xlink:href="#twitter"/></svg>
   </a>
-  <!-- <a class="socials-bar-link" target="_blank" href="https://open.spotify.com/artist/6YNCxvcxSDg3aQRlUbEW1I" title="Spotify">
+  <a class="socials-bar-link" target="_blank" href="https://open.spotify.com/artist/6YNCxvcxSDg3aQRlUbEW1I" title="Spotify">
     <svg><use xlink:href="#music"/></svg>
-  </a> -->
-  <!-- <a class="socials-bar-link" target="_blank" href="https://www.linkedin.com/in/matthew-maneval-785613143/" title="Linkedin">
+  </a>
+  <a class="socials-bar-link" target="_blank" href="https://www.linkedin.com/in/matthew-maneval-785613143/" title="Linkedin">
     <svg><use xlink:href="#linkedin"/></svg>
-  </a> -->
+  </a>
 </div>
