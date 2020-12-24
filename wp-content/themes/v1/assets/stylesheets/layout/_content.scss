@@ -16,7 +16,7 @@
      } // End Phone & Below
 
     li {
-      font-size: 1rem;
+      font-size: 1.65rem;
       letter-spacing: 0.21em;
       font-family: $title;
       color: $foreground;
@@ -26,7 +26,10 @@
 
   p {
     margin-bottom: $half-space;
-    font-size: 1.1em;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   } // End p
 
 //   img {} // End img

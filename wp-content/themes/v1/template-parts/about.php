@@ -1,13 +1,13 @@
 <section class="about">
   <div class="wrap">
     <h3>About</h3>
+    <h6>I believe in excellence.</h6>
     <div class="about-card">
       <div class="content">
         <div class="about-bio">
-          <h6>A brief history</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>Outside of work I enjoy writing and recording music, running, and playing golf.</p>
+          <p>Hi there! My name is Matt and specialize in building exceptional websites. </p>
+          <p>It's my mission to create pixel-perfect and peformant products for my clients. Most recently, I’ve been fortunate to work with the good folks at Electric Fun, a boutique creative agency in Toledo, Ohio. I'm currently available for hire. </p>
+          <p>Outside of work I enjoy learning about new technology, writing and recording music, running, and playing golf.</p>
         </div>
         <div class="about-list">
           <h6>Technologies I've been using:</h6>

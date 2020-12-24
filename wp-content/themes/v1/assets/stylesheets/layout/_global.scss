@@ -1,10 +1,7 @@
 body {
-  // background: linear-gradient(-45deg, #0e5aa4 30%, $foreground 1%, #fcad39, #f6393d, #f9003f, #ca0368, #382e6e);
-  // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  // background: linear-gradient(-45deg, #FFFFCC, #f9003f, #23a6d5, #23d5ab);
-  background: linear-gradient(-45deg, $foreground, #fcad39, #f6393d, #f9003f 50%, #23a6d5  50%);
-  background-size: 150% 150%;
-  animation: gradient 45s ease infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 35s ease infinite;
 
   &:before {
   	animation: grain 8s steps(10) infinite;
@@ -20,13 +17,13 @@ body {
 
   @keyframes gradient {
     0% {
-      background-position: 0% 0%;
+      background-position: 0% 50%;
     }
     50% {
-      background-position: 100% 100%;
+      background-position: 50% 100%;
     }
     100% {
-      background-position: 0% 0%;
+      background-position: 0% 50%;
     }
   }
 
@@ -67,6 +64,7 @@ section {
   color: $background;
   line-height: 140%;
   margin-bottom: $space;
+  font-size: 1.25em;
 }
 
 p {

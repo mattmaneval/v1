@@ -6,6 +6,13 @@
     background-color: $foreground;
   } // End Tablet & Below
 
+  h6 {
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+      color: $background;
+    } // End Phone & Below
+  }
+
   &-card {
     display: flex;
     background-color: $foreground;
@@ -27,10 +34,6 @@
       width: 100%;
       padding: 0;
     } // End Tablet & Below
-
-    p:last-of-type {
-      margin-bottom: $space;
-    }
   } // End &-content
 
   &-bio,
@@ -46,11 +49,11 @@
   } // End &-bio
 
   &-list {
-    background-color: $background;
+    background-color: rgba($background, 0.76);
 
     h6 {
       font-family: $title;
-      font-size: 1.1em;
+      font-size: 1.25em;
       text-transform: lowercase;
       color: $foreground;
     }
@@ -58,7 +61,7 @@
 
   &-potrait {
     width: 40%;
-    background-image: url("assets/images/potrait.png");
+    background-image: url("assets/images/potrait-color.png");
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
