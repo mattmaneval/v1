@@ -8,10 +8,10 @@
   position: absolute;
   right: 0;
   font-size: 0.75em;
-}
+} // End .photo-caption
 
 .about {
-  // @include wrap($wrap, 90em);
+  @include wrap($wrap, 90em);
   background-color: $foreground;
   box-shadow: $box-shadow;
 
@@ -37,7 +37,7 @@
     h3{
       z-index: 2;
     }
-  }
+  } // End &-head
 
   &-headings {
     grid-column: 1/3;
@@ -56,7 +56,7 @@
       position: relative;
       font-size: 4em;
     }
-  }
+  } // End &-headings
 
   &-potrait {
     grid-column: 2/-1;
