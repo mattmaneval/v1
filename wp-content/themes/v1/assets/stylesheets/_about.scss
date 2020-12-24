@@ -7,13 +7,14 @@
   @include h5;
   position: absolute;
   right: 0;
+  bottom: -1.7em;
   font-size: 0.75em;
 } // End .photo-caption
 
 .about {
-  @include wrap($wrap, 90em);
-  background-color: $foreground;
-  box-shadow: $box-shadow;
+  // @include wrap($wrap, 90em);
+  // background-color: $foreground;
+  // box-shadow: $box-shadow;
 
   // Secondary Mobile - Phone & Below
   @media screen and (max-width: $phone) {
@@ -37,6 +38,7 @@
 
     h3{
       z-index: 2;
+      color: $foreground;
     }
   } // End &-head
 
@@ -83,12 +85,16 @@
       display: block;
       content: "";
       width: 100%;
-      padding-top: 115%;
+      padding-top: 105%;
     }
   } // End &-potrait
 
   &-content {
     grid-gap: 4em;
+
+    p {
+      color: $foreground;
+    }
 
     // Primary Mobile - Tablet & Below
     @media screen and (max-width: $tablet) {
