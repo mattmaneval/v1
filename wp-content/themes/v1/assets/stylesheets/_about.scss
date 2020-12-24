@@ -18,6 +18,7 @@
   // Secondary Mobile - Phone & Below
   @media screen and (max-width: $phone) {
     width: 100%;
+    box-shadow: none;
   } // End Phone & Below
 
   &-head,
@@ -45,7 +46,6 @@
 
     // Secondary Mobile - Phone & Below
     @media screen and (max-width: $phone) {
-      // padding: 3em;
       grid-column: 1/-1;
     } // End Phone & Below
 
@@ -55,6 +55,11 @@
       z-index: 2;
       position: relative;
       font-size: 4em;
+
+      // Secondary Mobile - Phone & Below
+      @media screen and (max-width: $phone) {
+        margin-bottom: 3rem;
+      } // End Phone & Below
     }
   } // End &-headings
 
@@ -71,6 +76,7 @@
     // Secondary Mobile - Phone & Below
     @media screen and (max-width: $phone) {
       grid-column: 1/-1;
+      margin-bottom: 3rem;
     } // End Phone & Below
 
      &:before {
@@ -83,6 +89,11 @@
 
   &-content {
     grid-gap: 4em;
+
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
+      grid-gap: $half-space;
+    } // End Tablet & Below
 
     // Secondary Mobile - Phone & Below
     @media screen and (max-width: $phone) {
