@@ -29,6 +29,11 @@
 
     &:last-of-type {
       margin-bottom: 0;
+
+      // Primary Mobile - Tablet & Below
+      @media screen and (max-width: $tablet) {
+        margin-bottom: 3rem;
+      } // End Tablet & Below
     }
   } // End p
 

@@ -1,16 +1,14 @@
 .about {
-  display: flex;
-
   // Primary Mobile - Tablet & Below
   @media screen and (max-width: $tablet) {
     background-color: $foreground;
   } // End Tablet & Below
 
   h6 {
-    // Secondary Mobile - Phone & Below
-    @media screen and (max-width: $phone) {
+    // Primary Mobile - Tablet & Below
+    @media screen and (max-width: $tablet) {
       color: $background;
-    } // End Phone & Below
+    } // End Tablet & Below
   }
 
   &-card {
@@ -23,6 +21,7 @@
       flex-direction: column;
       padding: 0;
       box-shadow: none;
+      width: 100%;
     } // End Tablet & Below
   } // End &-card
 
