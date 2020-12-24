@@ -1,65 +1,30 @@
 .about {
-  // Primary Mobile - Tablet & Below
-  @media screen and (max-width: $tablet) {
-    background-color: $foreground;
-  } // End Tablet & Below
+  background-color: $foreground;
+  padding: 0;
 
-  h6 {
-    // Primary Mobile - Tablet & Below
-    @media screen and (max-width: $tablet) {
+  &-grid {
+    @include wrap($wrap, 80em);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+
+  &-content {
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+    h2 {
       color: $background;
-    } // End Tablet & Below
-  }
-
-  &-card {
-    display: flex;
-    background-color: $foreground;
-    box-shadow: 0.6em 0.4em 1.4em 0.7em rgba($background, 0.2);
-
-    // Primary Mobile - Tablet & Below
-    @media screen and (max-width: $tablet) {
-      flex-direction: column;
-      padding: 0;
-      box-shadow: none;
-      width: 100%;
-    } // End Tablet & Below
-  } // End &-card
-
-  .content {
-    width: 60%;
-
-    // Primary Mobile - Tablet & Below
-    @media screen and (max-width: $tablet) {
-      width: 100%;
-      padding: 0;
-    } // End Tablet & Below
-  } // End &-content
-
-  &-bio,
-  &-list {
-    padding: 1.85em;
-  }
-
-  &-bio {
-    // Primary Mobile - Tablet & Below
-    @media screen and (max-width: $tablet) {
-      padding: 0;
-    } // End Tablet & Below
-  } // End &-bio
-
-  &-list {
-    background-color: rgba($background, 0.76);
-
-    h6 {
-      font-family: $title;
-      font-size: 1.25em;
-      text-transform: lowercase;
-      color: $foreground;
+      z-index: 2;
+      position: relative;
+      font-size: 8em;
     }
-  } // End &-list
+  }
 
   &-potrait {
-    width: 40%;
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    // width: 100%;
     background-image: url("assets/images/potrait-color.png");
     background-position: 50%;
     background-repeat: no-repeat;
@@ -85,4 +50,93 @@
       padding-top: 115%;
     }
   } // End &-potrait
-} // End About
+}
+
+// .about {
+//   // Primary Mobile - Tablet & Below
+//   @media screen and (max-width: $tablet) {
+//     background-color: $foreground;
+//   } // End Tablet & Below
+//
+//   h6 {
+//     // Primary Mobile - Tablet & Below
+//     @media screen and (max-width: $tablet) {
+//       color: $background;
+//     } // End Tablet & Below
+//   }
+//
+//   &-card {
+//     display: flex;
+//     background-color: $foreground;
+//     box-shadow: 0.6em 0.4em 1.4em 0.7em rgba($background, 0.2);
+//
+//     // Primary Mobile - Tablet & Below
+//     @media screen and (max-width: $tablet) {
+//       flex-direction: column;
+//       padding: 0;
+//       box-shadow: none;
+//       width: 100%;
+//     } // End Tablet & Below
+//   } // End &-card
+//
+//   .content {
+//     width: 60%;
+//
+//     // Primary Mobile - Tablet & Below
+//     @media screen and (max-width: $tablet) {
+//       width: 100%;
+//       padding: 0;
+//     } // End Tablet & Below
+//   } // End &-content
+//
+//   &-bio,
+//   &-list {
+//     padding: 1.85em;
+//   }
+//
+//   &-bio {
+//     // Primary Mobile - Tablet & Below
+//     @media screen and (max-width: $tablet) {
+//       padding: 0;
+//     } // End Tablet & Below
+//   } // End &-bio
+//
+//   &-list {
+//     background-color: rgba($background, 0.76);
+//
+//     h6 {
+//       font-family: $title;
+//       font-size: 1.25em;
+//       text-transform: lowercase;
+//       color: $foreground;
+//     }
+//   } // End &-list
+//
+//   &-potrait {
+//     width: 40%;
+//     background-image: url("assets/images/potrait-color.png");
+//     background-position: 50%;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     position: relative;
+//     z-index: 1;
+//
+//     // Primary Mobile - Tablet & Below
+//     @media screen and (max-width: $tablet) {
+//       width: 100%;
+//       height: 62vh;
+//     } // End Tablet & Below
+//
+//     // Secondary Mobile - Phone & Below
+//     @media screen and (max-width: $phone) {
+//       height: 47vh;
+//     } // End Phone & Below
+//
+//      &:before {
+//       display: block;
+//       content: "";
+//       width: 100%;
+//       padding-top: 115%;
+//     }
+//   } // End &-potrait
+// } // End About
