@@ -74,6 +74,7 @@
     background-size: cover;
     position: relative;
     z-index: 1;
+    box-shadow: $box-shadow;
 
     // Secondary Mobile - Phone & Below
     @media screen and (max-width: $phone) {
