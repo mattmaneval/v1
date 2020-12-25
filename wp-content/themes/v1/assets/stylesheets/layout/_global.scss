@@ -9,17 +9,17 @@ body {
   background-size: 400% 400%;
   animation: gradient 35s ease infinite;
 
-  &:before {
-  	animation: grain 8s steps(10) infinite;
-  	background-image: url('assets/images/noise.png');
-  	content: '';
-  	height: 300%;
-  	left: -50%;
-  	opacity: 0.6;
-  	position: fixed;
-  	top: -100%;
-  	width: 300%;
-  }
+  // &:before {
+  // 	animation: grain 8s steps(10) infinite;
+  // 	background-image: url('assets/images/noise.png');
+  // 	content: '';
+  // 	height: 300%;
+  // 	left: -50%;
+  // 	opacity: 0.6;
+  // 	position: fixed;
+  // 	top: -100%;
+  // 	width: 300%;
+  // }
 
   @keyframes gradient {
     0% {
