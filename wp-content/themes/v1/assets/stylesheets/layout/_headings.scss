@@ -1,7 +1,7 @@
 // h1
 @mixin h1 {
   font-family: $title;
-  font-size: 8em;
+  font-size: 6em;
   color: $foreground;
   margin-bottom: 1rem;
   letter-spacing: -0.02EM;
@@ -27,7 +27,7 @@
 
 // h4
 @mixin h4 {
-  color: $background;
+  color: $foreground;
   margin-bottom: $half-space;
   text-transform: uppercase;
   font-size: 0.83em;
@@ -55,7 +55,6 @@ h3 {
   @include h4;
   position: relative;
   display: inline-block;
-  color: $background;
   margin-bottom: $space;
 
   // Secondary Mobile - Phone & Below

@@ -18,7 +18,7 @@
         </a>
         <?php if(empty($repository_link)) {} else { ?>
           <a href="<?php echo $repository_link; ?>" target="_blank" rel="noopener noreferrer" title="Visit the <?php the_title(); ?> repository on GitHub.">
-            <svg><use xlink:href="#code"/></svg>
+            <svg><use xlink:href="#github"/></svg>
           </a>
         <?php } ?>
       </div>

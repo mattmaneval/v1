@@ -23,10 +23,14 @@ input[type=text] {
 }
 
 input[type=submit] {
-  @include cta;
   border: none;
   -webkit-appearance: none;
   padding: 1em;
+  font-family: $font-medium;
+  font-size: 1.25em;
+  color: $background;
+  background-color: $foreground;
+  text-transform: capitalize;
 
   // Secondary Mobile - Phone & Below
   @media screen and (max-width: $phone) {
