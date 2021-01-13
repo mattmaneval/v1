@@ -20,7 +20,6 @@
 .cta {
   display: inline-block;
   color: $foreground;
-  font-style: italic;
 
   // Secondary Mobile - Phone & Below
   @media screen and (max-width: $phone) {
