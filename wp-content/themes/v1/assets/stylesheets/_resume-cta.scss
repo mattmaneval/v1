@@ -1,0 +1,26 @@
+.resume-cta {
+  // @include flexible;
+  color: $foreground;
+  font-family: $font-medium;
+  padding: 0.55em 1.25em;
+  position: relative;
+
+  svg {
+    position: absolute;
+    right: 0;
+    top: 0.3em;
+
+    &, use {
+      fill: $foreground;
+      height: 1.35rem;
+      width: 1.35rem;
+    }
+  }
+
+  &:hover {
+    @include animate;
+    background-color: transparent;
+    color: $foreground;
+    // border: 2px solid $foreground;
+  }
+}
