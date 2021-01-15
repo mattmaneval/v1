@@ -1,11 +1,10 @@
 @mixin cta {
   @include flexible;
   @include animate;
-  font-family: $title;
-  font-size: 1.1rem;
+  font-family: $font-medium;
   letter-spacing: .05em;
   padding: 0.65em 0;
-  font-size: 0.8em;
+  font-size: 1.25em;
   cursor: pointer;
 
   span {
@@ -16,8 +15,8 @@
 
   svg {
     @include animate;
-    height: 2.25em;
-    width: 2.25em;
+    height: 1.85rem;
+    width: 1.85rem;
 
     &, use {
       fill: $foreground;

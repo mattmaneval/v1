@@ -3,8 +3,8 @@
   font-family: $title;
   font-size: 6em;
   color: $foreground;
-  margin-bottom: 1rem;
   letter-spacing: -0.02EM;
+  line-height: 0;
 
   // Primary Mobile - Tablet & Below
   @media screen and (max-width: $tablet) {
