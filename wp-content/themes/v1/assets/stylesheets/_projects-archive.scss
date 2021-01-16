@@ -5,7 +5,7 @@
   }
 
   td.title {
-    @include h2;
+    font-family: $font;
     font-size: 1.7em;
 
     // Secondary Mobile - Phone & Below
