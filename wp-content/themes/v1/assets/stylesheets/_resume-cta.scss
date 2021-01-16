@@ -1,0 +1,37 @@
+.resume-cta {
+  // @include flexible;
+  color: $foreground;
+  font-family: $font-medium;
+  padding: 0.55em 1.25em;
+  position: relative;
+
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    display: none;
+  } // End Phone & Below
+
+  svg {
+    @include animate;
+    position: absolute;
+    right: 0;
+    top: 0.25em;
+
+    &, use {
+      fill: $foreground;
+      height: 1.45rem;
+      width: 1.45rem;
+    }
+  } // End svg
+
+  &:hover {
+    color: $callout;
+
+    svg {
+      transform: translateX(0.3em);
+
+      &, use {
+        fill: $callout;
+      }
+    }
+  } // End &:hover
+}

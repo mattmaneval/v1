@@ -52,8 +52,6 @@
     } // End Phone & Below
 
     h2 {
-      @include h1;
-      color: $background;
       z-index: 2;
       position: relative;
       font-size: 4em;
