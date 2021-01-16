@@ -7,7 +7,7 @@
   );
 
   if($projectsLoop->have_posts() ) { ?>
-    <section class="projects-archive">
+    <section class="projects-archive" id="projects">
       <div class="wrap">
         <h4>Projects Archive</h4>
         <table>

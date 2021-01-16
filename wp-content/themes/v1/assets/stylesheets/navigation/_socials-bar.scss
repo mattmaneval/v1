@@ -24,8 +24,8 @@
 
     svg {
       @include animate;
-      height: 1.25em;
-      width: 1.25em;
+      height: 1.25rem;
+      width: 1.25rem;
 
       &, use {
         fill: $foreground;

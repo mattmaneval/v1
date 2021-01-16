@@ -1,0 +1,58 @@
+button.menu-button {
+  @include flexible($justify: flex-start);
+  padding: 1.5em;
+  cursor: pointer;
+  position: relative;
+  box-sizing: content-box;
+  background: none;
+  z-index: 3;
+  height: 0.8rem;
+  width: 2rem;
+  transform: translateX(1.5rem);
+
+  .lines {
+    display: inline-block;
+    background-color: $foreground;
+    border-radius: 5em;
+    position: relative;
+
+    &:before,
+    &:after {
+      @include animate;
+      content: "";
+      position: absolute;
+      background-color: $foreground;
+      height: 0.13rem;
+      width: 2rem;
+      border-radius: 5em;
+    }
+
+    &:before {
+      top: -6px;
+      left: 0;
+    }
+
+    &:after {
+      top: 6px;
+      left: 0;
+    }
+  }
+
+  &-active {
+    .lines {
+      &:before,
+      &:after {
+        top: 0;
+        left: 0;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+  } // End .menu-open
+} // End .menu-button

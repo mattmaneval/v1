@@ -15,6 +15,7 @@ const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const stripdebug = require('gulp-strip-debug');
 const uglify = require('gulp-uglify');
+const babel = require('gulp-babel');
 
 // BrowserSync
 function browserSync(done) {
@@ -69,6 +70,9 @@ function js() {
       'vendor/**/*.js',
       // 'global.js',
     ]))
+    .pipe(babel({
+        presets: ['@babel/env']
+    }))
     .pipe(concat('dev.js'))
     .pipe(gulp.dest('wp-content/themes/v1/assets/js/'))
     .pipe(rename({ basename: 'build' }))
