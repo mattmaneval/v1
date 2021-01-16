@@ -1,20 +1,11 @@
-const menuButton = document.querySelector('.menu-button');
-const menu = document.querySelector('.menu');
-const header = document.querySelector('header');
-const html = document.querySelector('html');
+"use strict";
 
-function toggleMenuButton() {
-  menuButton.classList.toggle('menu-open');
-}
+var menuButton = document.querySelector('.menu-button');
+var menu = document.querySelector('.menu');
 
-function toggleMenu() {
+var openMenu = function openMenu() {
   menu.classList.toggle('open');
-  html.classList.toggle('overflow');
-}
-
-function openMenu() {
-  toggleMenuButton();
-  toggleMenu();
-}
+  menuButton.classList.toggle('menu-open');
+};
 
 menuButton.addEventListener('click', openMenu);

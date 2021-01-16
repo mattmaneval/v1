@@ -1,20 +1,9 @@
 const menuButton = document.querySelector('.menu-button');
 const menu = document.querySelector('.menu');
-const header = document.querySelector('header');
-const html = document.querySelector('html');
 
-function toggleMenuButton() {
-  menuButton.classList.toggle('menu-open');
-}
-
-function toggleMenu() {
+const openMenu = () => {
   menu.classList.toggle('open');
-  html.classList.toggle('overflow');
-}
-
-function openMenu() {
-  toggleMenuButton();
-  toggleMenu();
+  menuButton.classList.toggle('menu-open');
 }
 
 menuButton.addEventListener('click', openMenu);

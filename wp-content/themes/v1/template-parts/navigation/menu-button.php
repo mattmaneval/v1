@@ -1,3 +1,3 @@
-<div class="menu-button">
+<button class="menu-button">
   <span></span>
-</div>
+</button>
