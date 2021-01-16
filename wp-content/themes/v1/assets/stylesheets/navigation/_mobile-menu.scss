@@ -15,7 +15,6 @@
     padding: 12em 0;
     display: grid;
     grid-gap: $half-space;
-    // grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
 
     .menu-link {
@@ -52,10 +51,10 @@
 }
 
 .mobile-socials-bar {
+  display: none;
   // Secondary Mobile - Phone & Below
   @media screen and (max-width: $phone) {
     display: flex;
-
   } // End Phone & Below
 
   &-link {
@@ -80,5 +79,5 @@
         }
       }
     }
-  }
-}
+  } // End &-link
+} // End .mobile-socials-bar

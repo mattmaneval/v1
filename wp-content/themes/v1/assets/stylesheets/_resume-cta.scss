@@ -2,19 +2,15 @@
   @include flexible($justify: flex-start);
   color: $foreground;
   font-family: $font-medium;
-  // padding: 0.55em 1.25em;
   position: relative;
 
   svg {
     @include animate;
-    // position: absolute;
-    // right: 0;
-    // top: 0.25em;
 
     &, use {
       fill: $foreground;
-      height: 2.45rem;
-      width: 2.45rem;
+      height: 1.45rem;
+      width: 1.45rem;
     }
   } // End svg
 
