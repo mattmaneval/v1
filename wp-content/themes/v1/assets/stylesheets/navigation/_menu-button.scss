@@ -1,0 +1,93 @@
+.menu-button {
+  display: none;
+  padding: 2em;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+
+  // Primary Mobile - Tablet & Below
+  @media screen and (max-width: $tablet) {
+    display: inline-block;
+  } // End Tablet & Below
+
+  span {
+    display: block;
+    background-color: $foreground;
+    height: 0.13rem;
+    // width: 0.65rem;
+    border-radius: 5em;
+    position: relative;
+    // transform: translateX(-0.7em);
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: $foreground;
+      height: 0.13rem;
+      width: 2rem;
+      border-radius: 5em;
+      transition: all 0.2s;
+    }
+
+    &:before {
+      top: -0.6em;
+    }
+
+    &:after {
+      top: 0.6em;
+    }
+  }
+}
+
+.menu {
+  box-sizing: border-box;
+  width: 200px;
+  background-color: $foreground;
+  min-height: 100vh;
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: all 0.9s ;
+  display: grid;
+  grid-template-rows: repeat(3, 3em);
+  align-items: center;
+  padding: 6em 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: $foreground;
+
+  &-item {
+    font-size: 1.65em
+  }
+}
+
+.open {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.menu-open {
+
+  span {
+    display: block;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.2s;
+
+
+    &:before {
+      top: 0;
+      transform: rotate(45deg);
+      transition: all 0.22s;
+      background-color: $foreground;
+    }
+
+    &:after {
+      top: 0;
+      transform: rotate(-45deg);
+      background-color: $foreground;
+      transition: all 0.2s;
+    }
+  }
+}
