@@ -1,4 +1,4 @@
-.header {
+header {
   padding: 3em 0;
 
   .wrap {
@@ -10,6 +10,8 @@
 
     img {
       width: 15vw;
+      position: relative;
+      z-index: 2;
 
       // Primary Mobile - Tablet & Below
       @media screen and (max-width: $tablet) {
