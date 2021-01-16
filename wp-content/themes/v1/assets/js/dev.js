@@ -2,10 +2,14 @@
 
 var menuButton = document.querySelector('.menu-button');
 var menu = document.querySelector('.menu');
+var menuLink = document.querySelectorAll('.menu-link');
 
-var openMenu = function openMenu() {
+var toggleMenu = function toggleMenu() {
   menu.classList.toggle('open');
-  menuButton.classList.toggle('menu-open');
+  menuButton.classList.toggle('menu-button-active');
 };
 
-menuButton.addEventListener('click', openMenu);
+menuButton.addEventListener('click', toggleMenu);
+menuLink.forEach(function (link) {
+  return link.addEventListener('click', toggleMenu);
+});

@@ -1,16 +1,14 @@
-.menu-button {
+button.menu-button {
   @include flexible($justify: flex-start);
-  // display: inline-block;
   padding: 1.5em;
   cursor: pointer;
-  // position: relative;
+  position: relative;
   box-sizing: content-box;
-  text-align: left;
   background: none;
   z-index: 2;
   height: 0.8rem;
   width: 2rem;
-  transform: translateX(2rem);
+  transform: translateX(1.5rem);
 
   .lines {
     display: inline-block;
@@ -39,24 +37,22 @@
       left: 0;
     }
   }
-}
 
-.menu-open {
-  .lines {
-    &:before,
-    &:after {
-      top: 0;
-      left: 0;
-    }
+  &-active {
+    .lines {
+      &:before,
+      &:after {
+        top: 0;
+        left: 0;
+      }
 
-    &:before {
-      // top: 0;
-      transform: rotate(45deg);
-    }
+      &:before {
+        transform: rotate(45deg);
+      }
 
-    &:after {
-      // top: 0;
-      transform: rotate(-45deg);
+      &:after {
+        transform: rotate(-45deg);
+      }
     }
-  }
-}
+  } // End .menu-open
+} // End .menu-button

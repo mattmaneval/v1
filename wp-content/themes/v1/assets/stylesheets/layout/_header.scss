@@ -5,23 +5,18 @@ header {
     @include flexible($justify: space-between);
   }
 
-  .wordmark{
+  .logo {
     display: inline-block;
 
-    img {
-      width: 15vw;
+    svg {
       position: relative;
       z-index: 2;
 
-      // Primary Mobile - Tablet & Below
-      @media screen and (max-width: $tablet) {
-        width: 30vw;
-      } // End Tablet & Below
-
-      // Secondary Mobile - Phone & Below
-      @media screen and (max-width: $phone) {
-        width: 50vw;
-      } // End Phone & Below
+      &, use {
+        fill: $foreground;
+        width: 5em;
+        height: 1em;
+      }
     }
-  } // End .wordmark
+  } // End .logo
 }
