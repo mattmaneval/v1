@@ -1,3 +1,3 @@
 <button class="menu-button">
-  <span></span>
+  <span class="lines"></span>
 </button>
