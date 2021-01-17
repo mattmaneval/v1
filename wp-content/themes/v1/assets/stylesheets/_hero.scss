@@ -1,43 +1,81 @@
+@keyframes scroll-down {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-0.5em); }
+  100% { transform: translateY(0); }
+}
+
 .hero {
   @include flexible;
-  height: 84vh;
+  min-height: 84vh;
   background-image: url("./assets/images/laptop.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
 
   .wrap {
     @include flexible($direction: column);
     text-align: center;
   }
-}
 
-h1 {
-  // mix-blend-mode: difference;
-}
+  h1 span {
+    &:first-of-type {
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
 
-.hero h1 span:first-of-type {
-  display: inline-block;
-  margin-bottom: 0.5rem;
+    &:nth-of-type(2) {
+      display: inline-block;
+      margin-bottom: $half-space;
+    }
 
-}
+    &:last-of-type {
+      font-size: 2.3rem;
+      letter-spacing: 0.01em;
+      font-family: $font-bold;
 
-.hero h1 span:nth-of-type(2) {
-  display: inline-block;
-  margin-bottom: $half-space;
+      // Primary Mobile - Tablet & Below
+      @media screen and (max-width: $tablet) {
+        font-size: 1.4rem;
+      } // End Tablet & Below
+    }
+  } // End h1 span
 
-  // background: -webkit-linear-gradient(-45deg, #ee7752, #e73c7e);
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
-}
+  a {
+    padding: 1em;
+    animation: scroll-down 1.2s infinite;
+    position: absolute;
+    bottom: -12em;
 
-.hero h1 span:last-of-type {
-  font-size: 2.3rem;
-  letter-spacing: 0.01em;
-  font-family: $font-bold;
+    svg.scroll-down {
+      @include animate;
 
-  // Primary Mobile - Tablet & Below
-  @media screen and (max-width: $tablet) {
-    font-size: 1.4rem;
-  } // End Tablet & Below
-}
+      &, use {
+        fill: $foreground;
+        opacity: 0.45;
+        height: 1.85em;
+        width: 1.85em;
+      }
+    } // End svg.scroll-down
+
+    &:hover {
+      svg.scroll-down {
+        &, use {
+          opacity: 1;
+        }
+      }
+    } // End &:hover
+  } // End a
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(2px);
+  } //End &:before
+} // End .hero

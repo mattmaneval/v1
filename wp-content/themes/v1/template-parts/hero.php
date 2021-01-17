@@ -7,12 +7,8 @@
       <br />
       <span>based in Toledo, Ohio.</span>
     </h1>
-    <a class="cta" href="#contact" title="Get in touch">
-      <?php
-        $arrow_cta_text ="Get in touch";
-        include(locate_template("template-parts/navigation/arrow-cta.php"));
-        unset($arrow_cta_text);
-      ?>
+    <a href="#about" title="Scroll down!">
+      <svg class="scroll-down"><use xlink:href="#chevron-down" /></svg>
     </a>
   </div>
 </section>
