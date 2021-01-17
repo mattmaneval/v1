@@ -1,20 +1,34 @@
 .hero {
-  background-color: $background;
-  // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  // background-size: 400% 400%;
-  // animation: gradient 35s ease infinite;
+  @include flexible;
+  height: 84vh;
+  background-image: url("./assets/images/laptop.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
 
-  // &:before {
-  // 	animation: grain 8s steps(10) infinite;
-  // 	background-image: url('assets/images/noise.png');
-  // 	content: '';
-  // 	height: 300%;
-  // 	left: -50%;
-  // 	opacity: 0.6;
-  // 	position: fixed;
-  // 	top: -100%;
-  // 	width: 300%;
-  // }
+  .wrap {
+    @include flexible($direction: column);
+    text-align: center;
+  }
+}
+
+h1 {
+  // mix-blend-mode: difference;
+}
+
+.hero h1 span:first-of-type {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+
+}
+
+.hero h1 span:nth-of-type(2) {
+  display: inline-block;
+  margin-bottom: $half-space;
+
+  // background: -webkit-linear-gradient(-45deg, #ee7752, #e73c7e);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
 }
 
 .hero h1 span:last-of-type {
