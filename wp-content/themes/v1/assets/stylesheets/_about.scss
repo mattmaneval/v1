@@ -11,6 +11,11 @@
     max-width: 11em;
     text-align: center;
     margin-bottom: 6rem;
+
+    // Secondary Mobile - Phone & Below
+     @media screen and (max-width: $phone) {
+        margin-bottom: 3rem;
+     } // End Phone & Below
   }
 
   ul {
@@ -25,6 +30,10 @@
         height: 1.85em;
         width: 1.85em;
       }
+    }
+
+    p {
+      font-family: $font-light;
     }
   }
 }

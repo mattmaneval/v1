@@ -3,9 +3,11 @@
         <div class="footer-logo">
           <svg><use xlink:href="#logo" /></svg>
         </div>
-        <a class="footer-link" href="#about">About</a>
-        <a class="footer-link" href="#projects">Work</a>
-        <a class="footer-link" href="#contact">Contact</a>
+        <ul>
+          <li><a class="footer-link" href="#about">About</a></li>
+          <li><a class="footer-link" href="#projects">Work</a></li>
+          <li><a class="footer-link" href="#contact">Contact</a></li>
+        </ul>
         <?php include(locate_template("template-parts/resume/resume.php")); ?>
         <div class="footer-socials">
           <a class="footer-socials-link" target="_blank" href="https://github.com/mattmaneval" title="Github">

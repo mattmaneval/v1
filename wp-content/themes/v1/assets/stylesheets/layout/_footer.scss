@@ -1,37 +1,43 @@
 footer {
-  @include section;
+  padding: 6em 0 12em 0;
 
   .footer-logo {
     display: inline-block;
 
     svg {
       position: relative;
+      margin-bottom: 6rem;
 
       &, use {
         fill: $foreground;
-        width: 5em;
-        height: 1em;
+        width: 7em;
+        height: 2em;
       }
     }
   } // End .logo
 
-  .wrap {
-    display: grid;
-    grid-gap: $half-space;
-    grid-template-rows: repeat(5, 1fr);
+  ul {
+    margin-bottom: 3rem;
 
-    .footer-link {
+    li {
       @include animate;
-      color: $foreground;
-      font-size: 1.65em;
-      font-family: $font-medium;
-
-
+      margin-bottom: $half-space;
 
       &:hover {
         color: $callout;
         transform: translateX(0.15rem);
       }
+    }
+  }
+
+  .footer-link {
+    @include animate;
+    color: $foreground;
+    font-size: 1.65em;
+    font-family: $font-medium;
+
+    &:hover {
+      color: $callout;
     }
   }
 
@@ -67,7 +73,11 @@ footer {
       }
     } // End &-link
   } // End .footer-socials
-}
+
+  .resume-cta {
+    margin-bottom: 3rem;
+  }
+} // End Footer
 
 // footer {
 //   // @include section;
