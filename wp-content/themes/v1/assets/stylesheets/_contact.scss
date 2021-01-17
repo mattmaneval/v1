@@ -1,3 +1,13 @@
+.contact {
+  background-color: $foreground;
+
+  h2, h4 {
+    color: $background;
+  }
+}
+
 .contact-form-card {
   @include wrap($wrap, 36em);
+
+
 }

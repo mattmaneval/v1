@@ -8,15 +8,17 @@
   z-index: 10;
   width: 2.5em;
 
-  // Primary Mobile - Tablet & Below
-  @media screen and (max-width: $tablet) {
-    justify-content: flex-end;
-  } // End Tablet & Below
+  display: none; // Hide
 
-  // Secondary Mobile - Phone & Below
-  @media screen and (max-width: $phone) {
-    display: none;
-  } // End Phone & Below
+  // // Primary Mobile - Tablet & Below
+  // @media screen and (max-width: $tablet) {
+  //   justify-content: flex-end;
+  // } // End Tablet & Below
+  //
+  // // Secondary Mobile - Phone & Below
+  // @media screen and (max-width: $phone) {
+  //   display: none;
+  // } // End Phone & Below
 
   a {
     @include animate;

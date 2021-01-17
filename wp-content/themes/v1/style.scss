@@ -16,11 +16,16 @@ $phone: 767px;
 $small-phone:480px;
 
 // Colors
-$background: #000000;
-$background-alt: #f5e6d0;
+// $background: #000000;
+// $background-alt: #f5e6d0;
+// $foreground: #fcfcfa;
+// $callout: #23d5ab;
+// $text-select: #ffa500;
+$background: #15243b;
+$background-alt: #eadbc4;
 $foreground: #fcfcfa;
 $callout: #23d5ab;
-$text-select: #ffa500;
+$text-select: $callout;
 
 // Space
 $space: 2rem;

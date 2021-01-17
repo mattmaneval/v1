@@ -1,113 +1,30 @@
-@mixin about-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.photo-caption {
-  @include h5;
-  position: absolute;
-  right: 0;
-  bottom: -1.7em;
-  font-size: 0.75em;
-} // End .photo-caption
-
 .about {
-  // @include wrap($wrap, 90em);
-  // background-color: $foreground;
-  // box-shadow: $box-shadow;
+  background-color: $background-alt;
 
-  // Secondary Mobile - Phone & Below
-  @media screen and (max-width: $phone) {
-    width: 100%;
-    box-shadow: none;
-  } // End Phone & Below
-
-  &-head,
-  &-content {
-    @include about-grid;
+  .mini-wrap {
+    @include flexible($direction: column);
   }
 
-  &-head {
-    align-items: center;
-    margin-bottom: $space;
-
-    // Secondary Mobile - Phone & Below
-    @media screen and (max-width: $phone) {
-      display: block;
-    } // End Phone & Below
-
-    h3{
-      z-index: 2;
-      color: $foreground;
-    }
-  } // End &-head
-
-  &-headings {
-    grid-column: 1/3;
-    grid-row: 1/2;
-
-    // Secondary Mobile - Phone & Below
-    @media screen and (max-width: $phone) {
-      grid-column: 1/-1;
-    } // End Phone & Below
-
-    h2 {
-      z-index: 2;
-      position: relative;
-      font-size: 4em;
-
-      // Secondary Mobile - Phone & Below
-      @media screen and (max-width: $phone) {
-        margin-bottom: 3rem;
-      } // End Phone & Below
-    }
-  } // End &-headings
-
-  &-potrait {
-    grid-column: 2/-1;
-    grid-row: 1/2;
-    background-image: url("assets/images/potrait-color.png");
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+  h6 {
+    display: inline-block;
     position: relative;
-    z-index: 1;
-    box-shadow: $box-shadow;
+    max-width: 11em;
+    text-align: center;
+    margin-bottom: 6rem;
+  }
 
-    // Secondary Mobile - Phone & Below
-    @media screen and (max-width: $phone) {
-      grid-column: 1/-1;
-      margin-bottom: 3rem;
-    } // End Phone & Below
+  ul {
+    text-align: left;
+  }
 
-     &:before {
-      display: block;
-      content: "";
-      width: 100%;
-      padding-top: 105%;
+  li {
+    svg {
+    display: none;
+      &, use {
+        fill: $background;
+        height: 1.85em;
+        width: 1.85em;
+      }
     }
-  } // End &-potrait
-
-  &-content {
-    grid-gap: 4em;
-
-    p {
-      color: $foreground;
-    }
-
-    // Primary Mobile - Tablet & Below
-    @media screen and (max-width: $tablet) {
-      grid-gap: $half-space;
-    } // End Tablet & Below
-
-    // Secondary Mobile - Phone & Below
-    @media screen and (max-width: $phone) {
-      display: block;
-    } // End Phone & Below
-
-    p:first-of-type {
-      font-size: 2.4em;
-      line-height: 110%;
-    }
-  } // End &-content
+  }
 }

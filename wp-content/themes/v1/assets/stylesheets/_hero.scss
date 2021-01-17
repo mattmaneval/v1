@@ -1,3 +1,22 @@
+.hero {
+  background-color: $background;
+  // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  // background-size: 400% 400%;
+  // animation: gradient 35s ease infinite;
+
+  // &:before {
+  // 	animation: grain 8s steps(10) infinite;
+  // 	background-image: url('assets/images/noise.png');
+  // 	content: '';
+  // 	height: 300%;
+  // 	left: -50%;
+  // 	opacity: 0.6;
+  // 	position: fixed;
+  // 	top: -100%;
+  // 	width: 300%;
+  // }
+}
+
 .hero h1 span:last-of-type {
   font-size: 2.3rem;
   letter-spacing: 0.01em;

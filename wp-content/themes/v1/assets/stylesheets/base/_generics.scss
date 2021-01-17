@@ -14,7 +14,11 @@
 }
 
 .wrap {
-  @include wrap($wrap, 64em);
+  @include wrap($wrap, 84em);
+}
+
+.mini-wrap {
+  @include wrap($wrap, 42em);
 }
 
 .cta {

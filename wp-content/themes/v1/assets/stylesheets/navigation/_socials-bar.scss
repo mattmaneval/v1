@@ -1,22 +1,23 @@
 .socials-bar {
-  @include flexible($direction: column);
+  @include flexible($justify: flex-end, $direction: column);
   height: 100vh;
   width: 2.5em;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
-  right: auto;
   z-index: 10;
 
-  // Primary Mobile - Tablet & Below
-  @media screen and (max-width: $tablet) {
-    justify-content: flex-end;
-  } // End Tablet & Below
+  display: none; // Hide
 
-  // Secondary Mobile - Phone & Below
-  @media screen and (max-width: $phone) {
-    display: none;
-  } // End Phone & Below
+  // // Primary Mobile - Tablet & Below
+  // @media screen and (max-width: $tablet) {
+  //   justify-content: flex-end;
+  // } // End Tablet & Below
+
+  // // Secondary Mobile - Phone & Below
+  // @media screen and (max-width: $phone) {
+  //   display: none;
+  // } // End Phone & Below
 
   &-link {
     padding: 0.625em;
@@ -42,18 +43,18 @@
     }
   }
 
-  &:before {
-    content: "";
-    display: block;
-    width: 0.063em;
-    height: 20%;
-    background-color: rgba($foreground, 0.5);
-
-    // Primary Mobile - Tablet & Below
-    @media screen and (max-width: $tablet) {
-      display: none;
-    } // End Tablet & Below
-  }
+  // &:before {
+  //   content: "";
+  //   display: block;
+  //   width: 0.063em;
+  //   height: 20%;
+  //   background-color: rgba($foreground, 0.5);
+  //
+  //   // Primary Mobile - Tablet & Below
+  //   @media screen and (max-width: $tablet) {
+  //     display: none;
+  //   } // End Tablet & Below
+  // }
 
   &:after {
     content: "";

@@ -46,15 +46,16 @@
 
 .open {
   @include animate;
-  display: inline-block;
+  @include flexible($direction: column);
   z-index: 1;
 }
 
 .mobile-socials-bar {
-  display: none;
+  display: flex;
+  transform: translateX(-0.6em);
   // Secondary Mobile - Phone & Below
   @media screen and (max-width: $phone) {
-    display: flex;
+
   } // End Phone & Below
 
   &-link {

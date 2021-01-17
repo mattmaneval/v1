@@ -5,7 +5,7 @@
     <a class="menu-link" href="#contact">Contact</a>
     <?php include(locate_template("template-parts/resume/resume.php")); ?>
     <div class="mobile-socials-bar">
-      <a class="socials-bar-link" target="_blank" href="https://github.com/mattmaneval" title="Github">
+      <a class="mobile-socials-bar-link" target="_blank" href="https://github.com/mattmaneval" title="Github">
         <svg><use xlink:href="#github"/></svg>
       </a>
       <a class="mobile-socials-bar-link" target="_blank" href="https://codepen.io/mattmaneval" title="CodePen">

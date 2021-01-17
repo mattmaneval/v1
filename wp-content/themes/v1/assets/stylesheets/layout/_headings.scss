@@ -20,14 +20,14 @@
 // h2
 @mixin h2 {
   color: $foreground;
-  font-family: $font;
+  font-family: $title;
   font-size: 2.4em;
   margin-bottom: $space;
 }
 
 // h4
 @mixin h4 {
-  color: $foreground;
+  color: $background;
   margin-bottom: $space;
   text-transform: uppercase;
   font-size: 0.83em;
@@ -72,5 +72,8 @@ h5 {
 }
 
 h6 {
-  @include h2;
+  color: $background;
+  font-family: $font;
+  font-size: 2.4em;
+  margin-bottom: $space;
 }

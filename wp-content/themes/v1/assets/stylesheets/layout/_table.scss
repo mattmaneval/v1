@@ -7,9 +7,13 @@ table {
   &, thead, tr, th, td {
     font-size: 100%;
     font: inherit;
-    vertical-align: middle;
-    color: $foreground;
+    color: $background;
     line-height: 135%;
+
+    // Secondary Mobile - Phone & Below
+    @media screen and (max-width: $phone) {
+      vertical-align: middle;
+    } // End Phone & Below
   }
 
   tr {
@@ -25,12 +29,11 @@ table {
 
     th {
       @include h5;
-      color: rgba($foreground, 0.4);
+      color: rgba($background, 0.4);
     }
 
     td {
-      color: $foreground;
-      border-bottom: solid 1px rgba($background-alt, 0.35);
+      border-bottom: solid 1px rgba($background, 0.1);
     }
   }
 }

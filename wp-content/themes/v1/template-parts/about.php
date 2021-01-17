@@ -1,18 +1,14 @@
 <section class="about" id="about">
-  <div class="wrap">
-    <div class=" about-head">
-      <div class="about-headings">
-        <h3>About</h3>
-        <h2>i build things for the web.</h2>
-      </div>
-      <div class="about-potrait">
-        <div class="photo-caption">Photo by Jake Weber</div>
-      </div>
-    </div>
-    <div class="about-content">
-      <p>Hi there! My name is Matt and specialize in building exceptional websites. </p>
-      <p>It's my mission to create pixel-perfect and peformant products for my clients. Most recently, I’ve been fortunate to work with the good folks at Electric Fun, a boutique creative agency in Toledo, Ohio. I'm currently available for hire. </p>
-      <p>Outside of work I enjoy learning about new technology, writing and recording music, running, and playing golf.</p>
-    </div>
+  <div class="mini-wrap">
+    <h4>Hello there!</h4>
+    <h6>My name is Matt Maneval and I specialize in building exceptional websites.</h6>
+    <ul>
+      <li>
+        <svg><use xlink:href="#chevron-right" /></svg>
+        <p>My goal is to always write modern, performant, maintainable code for websites and applications that matches the design pixel by pixel.</p>
+        <p>Most recently, I’ve built a custom PR site–Little Star PR–and an e-commerce platform–Ilmor Store–with the good folks at Electric Fun, a boutique creative agency in Toledo, Ohio.</p>
+        <p>Outside of work I enjoy learning about new technology, dabbling in design, writing and recording music, and playing golf.</p>
+      </li>
+    </ul>
   </div>
 </section>
