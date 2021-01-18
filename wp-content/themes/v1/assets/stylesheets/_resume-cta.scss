@@ -3,14 +3,15 @@
   color: $foreground;
   font-family: $font-medium;
   position: relative;
+  font-size: 1.65em;
 
   svg {
     @include animate;
 
     &, use {
       fill: $foreground;
-      height: 1.45rem;
-      width: 1.45rem;
+      height: 1.65rem;
+      width: 1.65rem;
     }
   } // End svg
 
@@ -25,4 +26,4 @@
       }
     }
   } // End &:hover
-}
+} // End .resume-cta

@@ -1,5 +1,5 @@
 .projects-archive {
-  background-color: $background-alt;
+  background-color: #eaebec;
 
   td.year {
     color: rgba($background, 0.55);
@@ -7,7 +7,7 @@
   }
 
   td.title {
-    font-family: $font;
+    font-family: $font-medium;
     font-size: 1.7em;
 
     // Secondary Mobile - Phone & Below

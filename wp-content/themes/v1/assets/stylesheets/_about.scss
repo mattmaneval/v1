@@ -20,10 +20,32 @@
      } // End Phone & Below
   }
 
+  // .potrait {
+  //   display: inline-block;
+  //   position: relative;
+  //   background-image: url('./assets/images/potrait-color.png');
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: cover;
+  //   height: 15em;
+  //   width: 15em;
+  //   clip-path: circle(50%);
+  //   margin-bottom: 6em;
+  //
+  //   &:before {
+  //     display: inline-block;
+  //     content: "";
+  //     height: 10em;
+  //     width: 10em;
+  //     position: relative;
+  //   }
+  // }
+
   &-bio {
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20em;
     grid-gap: $space;
     text-align: center;
 
@@ -50,8 +72,16 @@
     }
 
     p {
-      font-family: $font-light;
+      @include flexible;
       font-size: 1.625em;
+      text-align: left;
+      // background-color: $callout;
+      // padding: 1.25em;
+      // border-radius: 0.25em;
+    }
+
+    &-item {
+
     }
   }
 }

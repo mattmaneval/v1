@@ -1,5 +1,10 @@
 .contact {
-  background-color: $foreground;
+  background-image: url("./assets/images/laptop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-attachment: fixed;
 
   h2, h4 {
     color: $background;
@@ -7,7 +12,13 @@
 }
 
 .contact-form-card {
-  @include wrap($wrap, 36em);
+  @include wrap($wrap, 44em);
+  background-color: $foreground;
+  padding: 3.5em 5em;
+  text-align: left;
 
-
+  // Secondary Mobile - Phone & Below
+  @media screen and (max-width: $phone) {
+    padding: 3.5em 1.65em;
+  } // End Phone & Below
 }
