@@ -16,6 +16,7 @@
   .wrap {
     @include flexible($direction: column);
     text-align: center;
+    position: relative;
   }
 
   h1 span {
@@ -45,7 +46,7 @@
     padding: 1em;
     animation: scroll-down 1.2s infinite;
     position: absolute;
-    bottom: -12em;
+    bottom: 1.5em;
 
     svg.scroll-down {
       @include animate;

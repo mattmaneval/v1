@@ -7,8 +7,8 @@
       <br />
       <span>based in Toledo, Ohio.</span>
     </h1>
-    <a href="#about" title="Scroll down!">
-      <svg class="scroll-down"><use xlink:href="#chevron-down" /></svg>
-    </a>
   </div>
+  <a href="#about" title="Scroll down!">
+    <svg class="scroll-down"><use xlink:href="#chevron-down" /></svg>
+  </a>
 </section>

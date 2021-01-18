@@ -4,7 +4,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
-  background-attachment: fixed;
 
   h2, h4 {
     color: $background;
@@ -19,6 +18,6 @@
 
   // Secondary Mobile - Phone & Below
   @media screen and (max-width: $phone) {
-    padding: 3.5em 1.65em;
+    padding: 2em 2em;
   } // End Phone & Below
 }
