@@ -1,12 +1,12 @@
 "use strict";
 
 var menuButton = document.querySelector('.menu-button');
-var menu = document.querySelector('.menu');
+var nav = document.querySelector('nav');
 var menuLink = document.querySelectorAll('.menu-link');
 var body = document.querySelector('body'); // Closes menu when window is resized
 
 var closeMenuOnResize = function closeMenuOnResize() {
-  menu.classList.remove('open');
+  nav.classList.remove('open');
   menuButton.classList.remove('menu-button-active');
   body.classList.remove('no-scroll');
   console.log("Im working...");
@@ -15,7 +15,7 @@ var closeMenuOnResize = function closeMenuOnResize() {
 
 
 var toggleMenu = function toggleMenu() {
-  menu.classList.toggle('open');
+  nav.classList.toggle('open');
   menuButton.classList.toggle('menu-button-active');
   body.classList.toggle('no-scroll');
   window.addEventListener('resize', closeMenuOnResize);
