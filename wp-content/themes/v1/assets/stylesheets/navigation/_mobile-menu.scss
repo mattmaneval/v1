@@ -1,3 +1,8 @@
+// Stop body scroll when menu is open
+.no-scroll {
+  position: fixed;
+}
+
 .menu {
   @include animate;
   background-color: $background;
@@ -18,7 +23,7 @@
 
     //
     overflow-y: scroll;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     height: 100vh;
     padding: 6em 0;
     width: 100vw;

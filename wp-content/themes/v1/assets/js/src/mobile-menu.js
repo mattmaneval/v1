@@ -1,12 +1,14 @@
 const menuButton = document.querySelector('.menu-button');
 const menu = document.querySelector('.menu');
 const menuLink = document.querySelectorAll('.menu-link');
+const body = document.querySelector('body');
 
 // Closes menu when window is resized
 const closeMenuOnResize = () => {
   menu.classList.remove('open');
   menuButton.classList.remove('menu-button-active');
-  console.log("Im working...");
+  body.classList.remove('no-scroll');
+  // console.log("Im working...");
   window.removeEventListener('resize', closeMenuOnResize);
 }
 
@@ -14,6 +16,7 @@ const closeMenuOnResize = () => {
 const toggleMenu = () => {
   menu.classList.toggle('open');
   menuButton.classList.toggle('menu-button-active');
+  body.classList.toggle('no-scroll');
   window.addEventListener('resize', closeMenuOnResize);
 }
 
