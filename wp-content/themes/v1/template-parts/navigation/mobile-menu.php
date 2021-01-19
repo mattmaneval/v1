@@ -1,6 +1,6 @@
 <nav>
   <!-- <a href="#" class="nav-logo"><svg><use xlink:href="#logo" /></svg></a> -->
-  <div class="wrap">
+  <div class="nav-container">
     <a class="nav-link" href="#about">About</a>
     <a class="nav-link" href="#projects">Work</a>
     <a class="nav-link" href="#contact">Contact</a>

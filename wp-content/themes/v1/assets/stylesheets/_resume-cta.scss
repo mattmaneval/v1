@@ -4,6 +4,7 @@
   font-family: $font-medium;
   position: relative;
   font-size: 1.65em;
+  margin-bottom: $half-space;
 
   svg {
     @include animate;
