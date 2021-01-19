@@ -8,8 +8,8 @@ var body = document.querySelector('body'); // Closes menu when window is resized
 var closeMenuOnResize = function closeMenuOnResize() {
   menu.classList.remove('open');
   menuButton.classList.remove('menu-button-active');
-  body.classList.remove('no-scroll'); // console.log("Im working...");
-
+  body.classList.remove('no-scroll');
+  console.log("Im working...");
   window.removeEventListener('resize', closeMenuOnResize);
 }; // Toggle menu & menu button
 

@@ -8,7 +8,7 @@ const closeMenuOnResize = () => {
   menu.classList.remove('open');
   menuButton.classList.remove('menu-button-active');
   body.classList.remove('no-scroll');
-  // console.log("Im working...");
+  console.log("Im working...");
   window.removeEventListener('resize', closeMenuOnResize);
 }
 
