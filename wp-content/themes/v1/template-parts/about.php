@@ -11,7 +11,7 @@
       </div>
       <div class="about-bio-item">
         <h4>What I'm up to</h4>
-        <p>Most recently, I’ve built a custom PR site–Little Star PR–and an e-commerce platform–Ilmor Store–with the good folks at Electric Fun, a boutique creative agency in Toledo, Ohio.</p>
+        <p>Most recently, I worked on a custom PR site–Little Star PR–and an e-commerce platform–Ilmor Store–with the good folks at Electric Fun, a boutique creative agency in Toledo, Ohio.</p>
       </div>
       <div class="about-bio-item">
         <h4>Interests</h4>

@@ -1,38 +1,31 @@
-// ::-webkit-scrollbar {
-//     display: none;
-// }
-
 @keyframes fade-in {
   0% {
     opacity: 0;
-    // transform: scale(0);
   }
   100% {
     opacity: 1;
-    // transform: scale(100%);
   }
 }
 
 @keyframes fade-out {
   0% {
     opacity: 1;
-    transform: scale(100%);
   }
   100% {
     opacity: 0;
-    transform: scale(0);
   }
 }
 
 // Stop body scroll when menu is open
 body.no-scroll {
   position: fixed;
-
+  // height: 100vh;
+  // overflow-y: hidden;
+  // padding-right: 15px;
 }
 
 nav {
   @include animate;
-  animation: fade-out 0.75s infinite;
   display: none;
   overflow-y: scroll;
   height: 100%;
@@ -44,16 +37,11 @@ nav {
   bottom: 0;
   left: 0;
   color: $foreground;
-
-
 }// End nav
 
 // Nav open
 .open {
-  animation: fade-in 0.45s;
-  // @include flexible($direction: column);
   display: block;
-  // @include animate;
   z-index: 1;
 }
 
@@ -64,6 +52,7 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .nav-link {
@@ -87,6 +76,11 @@ nav::-webkit-scrollbar-thumb {
 nav::-webkit-scrollbar {
   background: rgb(63,94,251);
   background: linear-gradient(204deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+
+::-webkit-scrollbar {
+  // display: none;
 }
 
 .mobile-socials-bar {
@@ -117,3 +111,11 @@ nav::-webkit-scrollbar {
     }
   } // End &-link
 } // End .mobile-socials-bar
+
+.fade-in {
+  animation: fade-in 0.45s 1;
+}
+
+.fade-out {
+  animation: fade-out 0.45s 1;
+}
