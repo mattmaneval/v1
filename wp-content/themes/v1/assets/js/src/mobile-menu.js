@@ -27,10 +27,7 @@ const body = document.querySelector('body');
 //   link.addEventListener('click', toggleMenu)
 // );
 
-
 //////////////////////
-
-
 
 const toggleMenu = () => {
 

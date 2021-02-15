@@ -1,12 +1,23 @@
 html, body {
-  -webkit-text-size-adjust: 100%;
-  min-height: 100%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  background-color: $background;
+  box-sizing: border-box;
 }
 
-// body {}
+html.no-scroll {
+  overflow: hidden;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  min-height: 100%;
+  // overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: $background;
+
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
 
 @mixin section {
   padding: 6em 0;

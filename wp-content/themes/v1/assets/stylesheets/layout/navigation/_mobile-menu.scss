@@ -17,12 +17,7 @@
 }
 
 // Stop body scroll when menu is open
-body.no-scroll {
-  position: fixed;
-  // height: 100vh;
-  // overflow-y: hidden;
-  // padding-right: 15px;
-}
+
 
 nav {
   @include animate;
